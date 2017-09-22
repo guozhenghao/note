@@ -1,6 +1,6 @@
 # Java操作MongoDB
-## **maven + spring boot 项目**
-### **前期准备**
+## maven + spring boot 项目
+### 前期准备
 - 导入包：
 ````
 < dependency>
@@ -24,7 +24,7 @@ spring:
 server:
   port: 8181
 ````
-### **使用**
+### 使用
 - 使用时先自动装载MongoTemplate
 ````
 @Autowired
@@ -69,8 +69,8 @@ while (iterator .hasNext()){
       //...
 }
 ````
-## **普通Java项目**
-### **前期准备**
+## 普通Java项目
+### 前期准备
 - 导入包
 
 1. mongodb-drive-0.0.0.jar
@@ -142,7 +142,7 @@ public enum MongoDBUtil {
      }
 }
 ````
-### **使用**
+### 使用
 - 连接数据库
 ````
 MongoCollection collection = MongoDBUtil.instance .getCollection( "数据库名", "表名" );

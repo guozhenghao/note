@@ -1,5 +1,5 @@
 # 读写文件
-## **Web项目**
+## Web项目
 ### web项目部署的时候，只会保留webapp中的内容，所需要将上传的文件放在该文件目录下。
 
 - 示例 *（文件放在了webapp下的web-inf下，使用File.separator是为了适配linux和windows不同的文件目录符号“//”或“\”）*
@@ -13,7 +13,7 @@ while ((temp = bf .readLine()) != null) {
 
 ````
 
-## **普通Java项目**
+## 普通Java项目
 ### 读取服务器上的位置或者本地位置
 - 示例
 

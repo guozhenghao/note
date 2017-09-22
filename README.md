@@ -5,8 +5,8 @@
 - [Python]
 - [MongoDB](/MongoDB/Root.md)
 - [MapBox]
-- [ActiveMQ]
-- [MapD]
+- [ActiveMQ](/ActiveMQ/Root.md)
+- [MapD](/MapD/Root.md)
 
 ## 网上资料
 ### 跨域相关知识
