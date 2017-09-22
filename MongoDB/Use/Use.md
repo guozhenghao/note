@@ -1,12 +1,12 @@
 # MongoDB的基本使用方法
-## **插入**
+## 插入
 - 插入一条数据
 ````
 db.getCollection('test').insert({"name":"张三"})
 ````
 如果数据库中已存在"_id"相同的项，现在需要对该项进行更新，则将insert改为save
-## **查询**
-### **find**
+## 查询
+### find
 - 查询所有结果
 ````
 db.getCollection('test').find({})
@@ -47,7 +47,7 @@ db.getCollection('test').find().limit(10)
 db.getCollection('test').distinct("name")
 ````
 
-### **aggregate**
+### aggregate
 - 查询所有结果
 ````
 db.getCollection('test').aggregate()
@@ -78,12 +78,12 @@ db.getCollection('test').aggregate([
     {"$limit":10}
 ])
 ````
-## **删除**
+## 删除
 - 删除
 ````
 db.getCollection('test').remove({"name":"张三"})
 ````
-## **索引**
+## 索引
 - 查看创建索引
 ````
 db.test.getIndexes()

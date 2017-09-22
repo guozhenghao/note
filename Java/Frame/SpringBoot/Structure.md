@@ -1,5 +1,5 @@
 # Spring Boot 三层结构样例
-### **Dao层**
+### Dao层
 ````
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Repository;
@@ -11,7 +11,7 @@ public interface TestDao {
 }
 
 ````
-### **Server层**
+### Server层
 ````
 import org.apache.catalina.connector.OutputBuffer;
 import org.bson.types.ObjectId;
@@ -37,7 +37,7 @@ public class TestServices implements TestDao {
 
 
 ````
-### **Controller层**
+### Controller层
 ````
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
