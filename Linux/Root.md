@@ -1,0 +1,13 @@
+# Linux学习笔记
+## 基础知识
+- [nohup]
+- [wget]
+- [crontab]
+- [screen]
+- [scp]
+- [rz]
+- [tar]
+## 服务器环境搭建
+- [Java](/Linux/Install/Java.md)
+- [Hadoop](/Linux/Install/Hadoop.md)
+- [Spark]
