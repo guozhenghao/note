@@ -1,13 +1,11 @@
 # Document
 
 ## 学习笔记
-- [Java](/Java/Root.md)
-- [Python](/Python/Root.md)
-- [MongoDB](/MongoDB/Root.md)
+- [编程语言](/Language/Root.md)
+- [数据库](/DataBase/Root.md)
+- [消息中间件](/Message/Root.md)
 - [MapBox](/MapBox/Root.md)
-- [ActiveMQ](/ActiveMQ/Root.md)
 - [Linux](/Linux/Root.md)
-- [MapD](/MapD/Root.md)
 
 ## 网上资料
 ### 官方文档

@@ -10,4 +10,4 @@
 ## 服务器环境搭建
 - [Java](/Linux/Install/Java.md)
 - [Hadoop](/Linux/Install/Hadoop.md)
-- [Spark]
+- [Spark](/Linux/Install/Spark.md)
