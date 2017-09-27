@@ -2,7 +2,7 @@
 ### 学习网址
 - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
 ## 基础知识
-- [三层结构样例](/Java/Frame/SpringBoot/Structure.md)
+- [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
 ## 小操作
-- [预加载](/Java/Frame/SpringBoot/Preloading.md)
-- [跨域问题](/Java/Frame/SpringBoot/CrossOrigin.md)
+- [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
+- [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
