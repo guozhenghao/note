@@ -9,5 +9,6 @@
 ## 工具类
 - [UTC时间相互转换](/Language/Java/Utils/UTCTransform.md)
 - [判断点在面内](/Language/Java/Utils/GeometyMethod.md)
+- [生成蜂窝网格](/Language/Java/Utils/HoneyComb.md)
 ## 框架
 - [Spring Boot](/Language/Java/Frame/SpringBoot.md)
