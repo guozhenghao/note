@@ -33,7 +33,8 @@
 - [rz]
 
 - [tar]
-
+## 系统安装
+- [centos 7 最小版本](/Linux/Install/Centos7.md)
 ## 服务器环境搭建
 - [Java](/Linux/Install/Java.md)
 - [Hadoop](/Linux/Install/Hadoop.md)
