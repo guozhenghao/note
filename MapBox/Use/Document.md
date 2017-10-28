@@ -2,7 +2,7 @@
 ### 切图
 使用tippecanoe将需要的geojson文件按照需要的层级转换为mbtiles文件。
 
-转换完成后可以通过`tile-join -n 重命名.mbtiles -o 输出文件名.mbtiles *mbtiles`将多个mbtiles文件合并。
+转换完成后可以通过`tile-join -n 重命名.mbtiles -o 输出文件名.mbtiles *.mbtiles`将多个mbtiles文件合并。
 
 ### 将文件发布，然后通过maputnik配置风格
 - 样例
