@@ -59,3 +59,21 @@ db.getCollection('表名').aggregate([
 ])
 
 ````
+
+- 上边的可能有问题 记录另一个
+````
+db.getCollection('表名').aggregate([
+   {"$geoNear" : 
+        {"near" : {
+         "type" : "Point" , "coordinates" : [ 116.156387329102, 40.1573604627098]} , 
+         "distanceField" : "字段名" , 
+         "query" : { "date" : "20171025","hour":"16"},（相当于match） 
+         "minDistance" : 0, 
+         "maxDistance" : 10,
+         "num" : 2 , 
+         "spherical" : true
+        }
+    }
+])
+
+````
