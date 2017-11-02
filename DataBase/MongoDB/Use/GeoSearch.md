@@ -43,24 +43,7 @@ db.getCollection('表名').find({
 ## 周边查询在聚合中可以进行更多处理
 
 - 查询语句 
-````
-db.getCollection('表名').aggregate([
-    {$geoNear:
-        {near:
-            {type:"Point",coordinates:[116.123,39.132] },
-            distanceField:"字段名",
-            $minDistance:0,
-            $maxDistance:500,
-            $num:5（相当于limit）,
-            spherical:true
-         }
-    },
-    {match、group等操作}
-])
 
-````
-
-- 上边的可能有问题 记录另一个
 ````
 db.getCollection('表名').aggregate([
    {"$geoNear" : 
