@@ -47,6 +47,8 @@ db.getCollection('test').find().limit(10)
 db.getCollection('test').distinct("name")
 ````
 
+- "$and/$or"为常规逻辑操作
+
 ### aggregate
 - 查询所有结果
 ````
