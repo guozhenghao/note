@@ -1,5 +1,6 @@
 # Java操作MongoDB
 ## maven + spring boot 项目
+#### [拼接demo](/DataBase/MongoDB/Language/JavaDemo.md)
 ### 前期准备
 - 导入包：
 ````
