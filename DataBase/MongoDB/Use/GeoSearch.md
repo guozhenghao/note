@@ -47,8 +47,8 @@ db.getCollection('表名').find({
 ````
 db.getCollection('表名').aggregate([
    {"$geoNear" : 
-        {"near" : {
-         "type" : "Point" , "coordinates" : [ 116.156387329102, 40.1573604627098]} , 
+        {"near" : 
+            { "type" : "Point" , "coordinates" : [ 116.156387329102, 40.1573604627098]} , 
          "distanceField" : "字段名" , 
          "query" : { "date" : "20171025","hour":"16"},（相当于match） 
          "minDistance" : 0, 

@@ -50,7 +50,6 @@ finalInfo.add(sort);
 
 AggregationOutput result = collection.aggregate(finalInfo);
 Iterator<DBObject> resultIterator = result.results().iterator();
-
 ````
 
 - and
@@ -58,5 +57,47 @@ Iterator<DBObject> resultIterator = result.results().iterator();
 List andInfo = new LinkedList<>();
 andInfo.add(new BasicDBObject("date",new BasicDBObject("$gte",strDate)));
 andInfo.add(new BasicDBObject("hour",new BasicDBObject("$gte",strHour)));
+````
+
+- near(find)
+````
+DBObject geometryInfo = new BasicDBObject();
+geometryInfo.put("type", "Point");
+geometryInfo.put("coordinates",
+						new double[] { 中心点lon, 中心点lat });
+DBObject nearInfo = new BasicDBObject();
+nearInfo.put("$geometry", geometryInfo);
+nearInfo.put("$minDistance", 0);
+nearInfo.put("$maxDistance", 半径);
+DBObject near = new BasicDBObject("$near", nearInfo);
+DBObject finalSearchInfo = new BasicDBObject();
+finalSearchInfo.put("字段名", near);
+````
+
+- polygon(find)
+````
+List<List<List<Double>>> list1 = new LinkedList<List<List<Double>>>();
+List<List<Double>> list2 = new LinkedList<List<Double>>();
+// 将面的边界点，以list的形式，添加到面的list中
+for (int i = 0; i < polygon.length; i = i + 2) {
+	List<Double> list3 = new LinkedList<Double>();
+	list3.add(点lon);
+	list3.add(点lat);
+	list2.add(list3);
+}
+// 第一个点再添加一遍，形成闭环
+List<Double> list3 = new LinkedList<Double>();
+list3.add(第一个点lon);
+list3.add(第一个点lat);
+list2.add(list3);
+list1.add(list2);
+// 拼接
+DBObject geometryInfo = new BasicDBObject();
+geometryInfo.put("type", "Polygon");
+geometryInfo.put("coordinates", list1);
+DBObject geometry = new BasicDBObject("$geometry", geometryInfo);
+DBObject geoWithin = new BasicDBObject("$geoWithin", geometry);
+DBObject finalSearchInfo = new BasicDBObject();
+finalSearchInfo.put("字段名", geoWithin);
 ````
 
