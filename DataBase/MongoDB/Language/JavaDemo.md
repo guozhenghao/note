@@ -103,6 +103,7 @@ finalSearchInfo.put("字段名", geoWithin);
 
 - near(aggregate)
 ````
+DBObject geoNear = new BasicDBObject();
 List _list = new LinkedList<>();
 _list.add(中心点lon);
 _list.add(中心点lat);
@@ -118,5 +119,4 @@ geoNearInfo.put("minDistance", 0);
 geoNearInfo.put("maxDistance", 半径);
 geoNearInfo.put("spherical", true);
 geoNear.put("$geoNear", geoNearInfo);
-
 ````
