@@ -101,3 +101,22 @@ DBObject finalSearchInfo = new BasicDBObject();
 finalSearchInfo.put("字段名", geoWithin);
 ````
 
+- near(aggregate)
+````
+List _list = new LinkedList<>();
+_list.add(中心点lon);
+_list.add(中心点lat);
+DBObject near = new BasicDBObject();
+near.put("type", "Point");
+near.put("coordinates",_list);
+DBObject geoNearInfo = new BasicDBObject();
+geoNearInfo.put("near", near);
+geoNearInfo.put("distanceField", "字段");
+// 相当于match
+geoNearInfo.put("query", new BasicDBObject("name","张三"));
+geoNearInfo.put("minDistance", 0);
+geoNearInfo.put("maxDistance", 半径);
+geoNearInfo.put("spherical", true);
+geoNear.put("$geoNear", geoNearInfo);
+
+````
