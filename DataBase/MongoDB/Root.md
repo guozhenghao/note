@@ -1,7 +1,7 @@
 # MongoDB学习笔记
 ## 基础知识
 - [基本操作](/DataBase/MongoDB/Use/Use.md)
-- [改变返回值结构](/DataBase/MongoDB/Use/Structure.md)
+- [改变数据结构](/DataBase/MongoDB/Use/Structure.md)
 - [连表查询](/DataBase/MongoDB/Use/Lookup.md)
 - [空间查询](/DataBase/MongoDB/Use/GeoSearch.md)
 ## 各种语言使用方法
