@@ -17,3 +17,22 @@ db.collection.aggregate( [ { $project: { myArray: [ "$x", "$y" ] } } ] )
 ````
 { "_id" : ObjectId("55ad167f320c6be244eb3b95"), "myArray" : [ 1, 1 ] }
 ````
+
+- project 还可用于字符串的连接
+
+````
+db.collection.aggregate( [ { $project: { "合并后的名字":{ $concat: [ "$字段名", "123456", "$字段名" ] } } } ] )
+````
+
+- project 还可用于字符串的拆分
+
+````
+db.collection.aggregate( [ { $project: { "拆分后的名字":{ $substr: [ "$字段名", 开始下标, 长度 ] } } } ] )
+````
+
+- split
+
+````
+db.collection.aggregate( [ { $project: { "拆分后的名字":{  $split: ["$city", ", "]  } } } ] )
+````
+
