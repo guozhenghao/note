@@ -48,6 +48,9 @@ db.getCollection('test').distinct("name")
 ````
 
 - "$and/$or"为常规逻辑操作
+````
+$and:[{"name":"asdf"},{"age":18}]
+````
 
 ### aggregate
 - 查询所有结果
