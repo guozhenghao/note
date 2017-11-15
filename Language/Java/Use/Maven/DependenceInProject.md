@@ -1,19 +1,6 @@
-# Maven相关知识
-
-## maven修改下载源
+# 将依赖下载到项目中
+- 将代码复制到pom文件project层中最后
 ````
-在maven的setting文件中添加
-<mirror>  
-    <id>alimaven</id>  
-    <mirrorOf>central</mirrorOf>    
-    <name>aliyun maven</name>  
-    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>        
-</mirror>  
-````
-
-## 将依赖下载到项目中
-````
-在pom文件的project层最后添加
 <build>
     <plugins>
         <plugin>
