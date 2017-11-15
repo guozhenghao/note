@@ -2,9 +2,9 @@
 ## 基础知识
 - [读写文件](/Language/Java/Use/ReadFile.md)
 - 跨域问题
-  
-  `response.setHeader("Access-Control-Allow-Origin", "*");`
 
+  `response.setHeader("Access-Control-Allow-Origin", "*");`
+- [maven相关](/Language/Java/Use/Maven.md)
   Spring可以使用注解，详情见spring分类
 ## 工具类
 - [UTC时间相互转换](/Language/Java/Utils/UTCTransform.md)
