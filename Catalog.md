@@ -1,0 +1,81 @@
+# 笔记总目录
+
+## 编程语言
+- Java
+    - 基础知识
+        - [读写文件](/Language/Java/Use/ReadFile.md) 
+        - [跨域问题](/Language/Java/Use/CrossOrigin.md)
+    - 工具类
+        - [UTC时间相互转换](/Language/Java/Utils/UTCTransform.md)
+        - [判断点在面内](/Language/Java/Utils/GeometyMethod.md)
+        - [生成蜂窝网格](/Language/Java/Utils/HoneyComb.md)
+        - [谷歌网格坐标相互转换](/Language/Java/Utils/GoogleGrid.md)
+    - 框架
+        - Spring Boot
+            - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
+            - [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
+            - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
+            - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
+            - [多mongodb数据源](/Language/Java/Frame/SpringBoot/MultipleMongoDBDataSource.md)
+    - Maven
+        - [修改下载源](/Language/Java/Use/Maven/ChangeSource.md)
+        - [将依赖下载到项目中](/Language/Java/Use/Maven/DependenceInProject.md)
+- Python
+    - 基础知识
+        - [网络请求](/Language/Python/Use/Net.md)
+    - 爬虫
+        - [普通网页爬取](/Language/Python/Spider/Normal.md)
+        - [Scrapy框架](/Language/Python/Spider/Scrapy.md)
+        - [Selenium自动化测试](/Language/Python/Spider/Selenium.md) *（包括Phantomjs等操作）*
+        - [解决反爬虫](/Language/Python/Spider/AntiSpider.md)
+- Go
+    - Learing 以后记录
+- Kotlin
+    - 宝宝还没开始学
+
+## 数据库
+- MongoDB
+    - 基础知识
+        - [基本操作](/DataBase/MongoDB/Use/Use.md)
+        - [改变数据结构](/DataBase/MongoDB/Use/Structure.md)
+        - [连表查询](/DataBase/MongoDB/Use/Lookup.md)
+        - [空间查询](/DataBase/MongoDB/Use/GeoSearch.md)
+    - 各种语言使用方法
+        - [Java](/DataBase/MongoDB/Language/Java.md)
+            - [Demo](/DataBase/MongoDB/Language/JavaDemo.md)
+        - [Python](/DataBase/MongoDB/Language/Python.md)
+    - 资料
+        - [官方文档](https://docs.mongodb.com/manual/)
+- MapD
+    - [Java使用](/DataBase/MapD/Language/Java.md)
+- Redis
+## 消息中间件
+- ActiveMQ
+    - [Java](/Message/ActiveMQ/Language/Java.md)
+- Kafka
+- 资料
+    - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
+## MapBox
+- 基础知识
+    - [Mapbox矢量数据生成配图流程](/MapBox/Use/Document.md)
+- 工具
+    - [tippecanoe](/MapBox/Utils/Tippecanoe.md)
+    - [tileserver-gl-light](/MapBox/Utils/TileserverGlLight.md)
+    - [maputnik](/MapBox/Utils/Maputnik.md)
+- 资料
+    - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)
+    - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
+    - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
+    - [基于MapboxGL的样式文件自动生成图例](http://blog.csdn.net/wan_yanyan528/article/details/52538686)
+
+## Linux
+- 基础知识
+- 系统安装
+    - [centos 7最小版本](/Linux/Install/Centos7.md)
+- 服务器环境搭建
+    - [Java](/Linux/Install/Java.md)
+    - [CDH](/Linux/Install/CDH.md)
+    - [Hadoop](/Linux/Install/Hadoop.md)
+    - [Spark](/Linux/Install/Spark.md)
+    - [Zookeeper](/Linux/Install/Zookeeper.md)
+    - [Kafka](/Linux/Install/Kafka.md)
