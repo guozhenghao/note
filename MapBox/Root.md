@@ -6,6 +6,7 @@
 - [tileserver-gl-light](/MapBox/Utils/TileserverGlLight.md)
 - [maputnik](/MapBox/Utils/Maputnik.md)
 ## 资料
+- [tippecanoe官方文档](https://github.com/mapbox/tippecanoe)
 - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)
 - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
 - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
