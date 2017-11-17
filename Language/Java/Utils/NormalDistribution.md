@@ -3,7 +3,7 @@
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class Main {
+public class NormalDistribution {
 
     public static void main(String[] args) {
 //        double a = gaussian(0.0,1.5,0.0,1);
