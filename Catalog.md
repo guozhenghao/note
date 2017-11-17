@@ -10,6 +10,7 @@
         - [判断点在面内](/Language/Java/Utils/GeometyMethod.md)
         - [生成蜂窝网格](/Language/Java/Utils/HoneyComb.md)
         - [谷歌网格坐标相互转换](/Language/Java/Utils/GoogleGrid.md)
+        - [正态分布](/Language/Java/Utils/NormalDistribution.md)
     - 框架
         - Spring Boot
             - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
