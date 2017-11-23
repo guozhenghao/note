@@ -34,6 +34,9 @@
         - [解决反爬虫](/Language/Python/Spider/AntiSpider.md)
 - Go
     - Learing 以后记录
+    - 资料
+        - [Go指南](http://tour.studygolang.com/basics/1)
+        - [Github学习地址](https://github.com/astaxie/build-web-application-with-golang)
 - Kotlin
     - 宝宝还没开始学
 
