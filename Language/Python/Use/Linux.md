@@ -20,3 +20,5 @@ import os
 
 os.path.exists("path")
 ````
+
+### 注意，每次使用os.system使用linux命令时，系统都会新开一个进程执行，没有环境变量，所以需要写全命令路径，通过which is xxxx查询
