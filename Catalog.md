@@ -14,11 +14,14 @@
         - [GeoHash](/Language/Java/Utils/GeoHash.md)
     - 框架
         - Spring Boot
-            - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
-            - [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
-            - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
-            - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
-            - [多mongodb数据源](/Language/Java/Frame/SpringBoot/MultipleMongoDBDataSource.md)
+            - 基础知识
+                - [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
+            - 小操作              
+                - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
+                - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
+                - [多mongodb数据源](/Language/Java/Frame/SpringBoot/MultipleMongoDBDataSource.md)
+            - 资料
+                - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
     - Maven
         - [修改下载源](/Language/Java/Use/Maven/ChangeSource.md)
         - [将依赖下载到项目中](/Language/Java/Use/Maven/DependenceInProject.md)
@@ -33,10 +36,22 @@
         - [Selenium自动化测试](/Language/Python/Spider/Selenium.md) *（包括Phantomjs等操作）*
         - [解决反爬虫](/Language/Python/Spider/AntiSpider.md)
 - Go
-    - Learing 以后记录
+    - 基础知识
+        - [Bee项目创建工具](/Language/Go/Frame/Beego/Bee.md)
+        - [MySQL](/Language/Go/Frame/Beego/MySQL.md)
+        - [Socket](/Language/Go/Use/Socket.md)
+        - [反射](/Language/Go/Use/Reflect.md)
+    - 框架
+        - Beego
+            - 基础知识
+                - [Bee项目创建工具](/Language/Go/Frame/Beego/Bee.md)
+                - [MySQL](/Language/Go/Frame/Beego/MySQL.md)
+            - 资料
+                - [Beego学习](https://beego.me/docs/intro/)
     - 资料
         - [Go指南](http://tour.studygolang.com/basics/1)
         - [Github学习地址](https://github.com/astaxie/build-web-application-with-golang)
+        - [Go标准库文档](https://studygolang.com/pkgdoc)
 - Kotlin
     - 宝宝还没开始学
 
