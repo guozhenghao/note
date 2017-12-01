@@ -4,6 +4,7 @@
 - [MySQL](/Language/Go/Use/MySQL.md)
 - [Socket](/Language/Go/Use/Socket.md)
 - [反射](/Language/Go/Use/Reflect.md)
+- [时间](/Language/Go/Use/Time.md)
 ## 框架
 - [Beego](/Language/Go/Frame/Beego.md)
 ## 资料
