@@ -1,6 +1,12 @@
 # Go学习笔记
-## 还没学完，学灵光了再写点笔记
-
+## 基础知识
+- [WebServer](/Language/Go/Use/WebServer.md)
+- [MySQL](/Language/Go/Use/MySQL.md)
+- [Socket](/Language/Go/Use/Socket.md)
+- [反射](/Language/Go/Use/Reflect.md)
+## 框架
+- [Beego](/Language/Go/Frame/Beego.md)
 ## 资料
 - [Go指南](http://tour.studygolang.com/basics/1)
 - [Github学习地址](https://github.com/astaxie/build-web-application-with-golang)
+- [Go标准库文档](https://studygolang.com/pkgdoc)
