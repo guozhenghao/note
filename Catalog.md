@@ -40,7 +40,6 @@
         - [时间](/Language/Go/Use/Time.md)
         - [异常处理](/Language/Go/Use/Exception.md)
         - [WebServer](/Language/Go/Use/WebServer.md)
-        - [MySQL](/Language/Go/Use/MySQL.md)
         - [Socket](/Language/Go/Use/Socket.md)
         - [反射](/Language/Go/Use/Reflect.md)
         - [读写锁](/Language/Go/Use/Lock.md)
@@ -48,7 +47,6 @@
         - Beego
             - 基础知识
                 - [Bee项目创建工具](/Language/Go/Frame/Beego/Bee.md)
-                - [MySQL](/Language/Go/Frame/Beego/MySQL.md)
             - 资料
                 - [Beego学习](https://beego.me/docs/intro/)
     - 资料
@@ -72,7 +70,11 @@
     - 资料
         - [官方文档](https://docs.mongodb.com/manual/)
 - MapD
-    - [Java使用](/DataBase/MapD/Language/Java.md)
+    - 各种语言使用方法
+        - [Java使用](/DataBase/MapD/Language/Java.md)
+- MySQL
+    - 各种语言使用方法
+        - [Go](/DataBase/MySQL/Language/Go.md)
 - Redis
 ## 消息中间件
 - ActiveMQ

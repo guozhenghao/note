@@ -3,7 +3,6 @@
 - [时间](/Language/Go/Use/Time.md)
 - [异常处理](/Language/Go/Use/Exception.md)
 - [WebServer](/Language/Go/Use/WebServer.md)
-- [MySQL](/Language/Go/Use/MySQL.md)
 - [Socket](/Language/Go/Use/Socket.md)
 - [反射](/Language/Go/Use/Reflect.md)
 - [读写锁](/Language/Go/Use/Lock.md)
