@@ -1,6 +1,7 @@
 # Go学习笔记
 ## 基础知识
 - [时间](/Language/Go/Use/Time.md)
+- [并发](/Language/Go/Use/Goroutine.md)
 - [异常处理](/Language/Go/Use/Exception.md)
 - [WebServer](/Language/Go/Use/WebServer.md)
 - [Socket](/Language/Go/Use/Socket.md)
