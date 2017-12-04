@@ -44,6 +44,8 @@
         - [Socket](/Language/Go/Use/Socket.md)
         - [反射](/Language/Go/Use/Reflect.md)
         - [读写锁](/Language/Go/Use/Lock.md)
+    - 工具类
+        - [进制转换](/Language/Go/Utils/Binary.md)
     - 框架
         - Beego
             - 基础知识
