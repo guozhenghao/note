@@ -1,5 +1,6 @@
 # Go语言进制转换
 ### 部分使用样例
+##### biu中方法
 - Bytes to string (binary format)
 ````
 bs := []byte{1, 2, 3}
@@ -30,6 +31,8 @@ var b int16
 biu.ReadBinaryString("[1 0000 0011]", &b)
 fmt.Println(b) //259
 ````
+##### 还有其他文件中的方法（如number、binary中等）
+
 ## 将下面的文件放进项目
 ### var.go
 ````

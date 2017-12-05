@@ -76,6 +76,8 @@
     - 各种语言使用方法
         - [Java使用](/DataBase/MapD/Language/Java.md)
 - MySQL
+    - 基础知识
+        - [GeoSearch](/DataBase/MySQL/Use/GeoSearch.md)
     - 各种语言使用方法
         - [Go](/DataBase/MySQL/Language/Go.md)
 - Redis
