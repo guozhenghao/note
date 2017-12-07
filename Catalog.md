@@ -67,6 +67,7 @@
         - [改变数据结构](/DataBase/MongoDB/Use/Structure.md)
         - [连表查询](/DataBase/MongoDB/Use/Lookup.md)
         - [空间查询](/DataBase/MongoDB/Use/GeoSearch.md)
+        - [更改字段名](/DataBase/MongoDB/Use/Rename.md)
     - 各种语言使用方法
         - [Java](/DataBase/MongoDB/Language/Java.md)
             - [Demo](/DataBase/MongoDB/Language/JavaDemo.md)
