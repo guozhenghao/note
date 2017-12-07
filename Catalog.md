@@ -57,7 +57,8 @@
         - [Github学习地址](https://github.com/astaxie/build-web-application-with-golang)
         - [Go标准库文档](https://studygolang.com/pkgdoc)
 - Kotlin
-    - 宝宝还没开始学
+    - 基础知识
+        - [安装使用](/Language/Kotlin/Use/Install.md)
 
 ## 数据库
 - MongoDB
