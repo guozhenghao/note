@@ -1,9 +1,7 @@
-# Docker下载镜像并创建实例
-## 下载镜像
+# Docker安装MySQL
 - 查看镜像版本等，可以查看:  [阿里镜像网址](https://cr.console.aliyun.com/#/imageSearch)
 ````
-// 以下载mongo3.4.10版本为例
-docker pull mongo:3.4.10
+docker pull mysql:版本号，不写冒号安装最新
 ````
 
 ## 创建实例
@@ -27,6 +25,3 @@ docker run -p 3306:3306 --name 实例名 -e MYSQL_ROOT_PASSWORD=密码 -tid 刚�
 ````
 -v $PWD/conf/my.cnf:/etc/mysql/my.cnf -v $PWD/logs:/logs -v $PWD/data:/mysql_data
 ````
-
-3306:3306 一个是外网端口一个是容器端口，没弄明白，先留坑
-
