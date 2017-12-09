@@ -13,3 +13,4 @@
 - [MapBox](/MapBox/Root.md)
 - [Docker](/Docker/Root.md)
 - [Linux](/Linux/Root.md)
+- [奇淫巧技](/Skill/Root.md)

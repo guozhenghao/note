@@ -123,3 +123,5 @@
     - [Spark](/Linux/Install/Spark.md)
     - [Zookeeper](/Linux/Install/Zookeeper.md)
     - [Kafka](/Linux/Install/Kafka.md)
+## 奇淫巧技
+- [postman-chrome](/Skill/Postman-chrome.md)
