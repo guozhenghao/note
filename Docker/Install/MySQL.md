@@ -25,3 +25,8 @@ docker run -p 3306:3306 --name 实例名 -e MYSQL_ROOT_PASSWORD=密码 -tid 刚�
 ````
 -v $PWD/conf/my.cnf:/etc/mysql/my.cnf -v $PWD/logs:/logs -v $PWD/data:/mysql_data
 ````
+
+## 时间
+数据库肯定会用到date相关的类型，这时数据库的时间是UTC，标准时间比东八区慢了8小时。
+
+更改方法详见[Docker更改时区](/Docker/Use/Time.md)
