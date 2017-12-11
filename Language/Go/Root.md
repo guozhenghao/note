@@ -9,6 +9,7 @@
 - [读写锁](/Language/Go/Use/Lock.md)
 ## 工具类
 - [进制转换](/Language/Go/Utils/Binary.md)
+- [发送邮件](/Language/Go/Utils/Email.md)
 ## 框架
 - [Beego](/Language/Go/Frame/Beego.md)
 ## 资料
