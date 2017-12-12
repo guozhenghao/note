@@ -7,6 +7,7 @@
 - [Socket](/Language/Go/Use/Socket.md)
 - [反射](/Language/Go/Use/Reflect.md)
 - [读写锁](/Language/Go/Use/Lock.md)
+- [随机数](/Language/Go/Use/Rand.md)
 ## 工具类
 - [进制转换](/Language/Go/Utils/Binary.md)
 - [发送邮件](/Language/Go/Utils/Email.md)
