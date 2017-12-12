@@ -50,6 +50,7 @@
     - 工具类
         - [进制转换](/Language/Go/Utils/Binary.md)
         - [发送邮件](/Language/Go/Utils/Email.md)
+        - [snowflake](/Language/Go/Utils/Snowflake.md)
     - 框架
         - Beego
             - 基础知识
