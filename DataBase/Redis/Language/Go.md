@@ -34,7 +34,7 @@ _,err := conn.Do("SET",fmt.Sprintf("%s%d",mailAddr,randomNum),mailAddr,"EX",60 *
 test,err := redis.String(conn.Do("GET","123456"))
 ````
 
-### SET、GET 结构体(JSON)
+#### SET、GET 结构体(JSON)
 - SET
 ````
 value, err := json.Marshal(结构体)

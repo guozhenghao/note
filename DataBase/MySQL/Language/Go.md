@@ -73,16 +73,6 @@ func init() {
 ````
 - 配置文件样例
 ````
-#程序名
-appname = test
-
-#版本号
-AppVer = "1.0.0"
-
-#监听端口号
-httpport = 8181
-
-###################### 数据库配置 ############################
 # MYSQL地址
 dbhost = 
 
@@ -115,4 +105,59 @@ o := orm.NewOrm()
 sql := fmt.Sprintf("select * from table1")
 //执行赋值
 _, errr := o.Raw(sql).QueryRows(&result)
+````
+- 标准增删改查
+````
+//das_info是个das信息的结构体
+const (
+	DAS_INFO_TABLE = "das_info"
+)
+
+func (this *DasInfo) TableName() string {
+	return DAS_INFO_TABLE
+}
+
+func (this *DasInfo) Insert() error {
+	id, err := orm.NewOrm().Insert(this)
+	if err != nil {
+		return err
+	}
+	this.Id = int32(id)
+	return nil
+}
+
+func (this *DasInfo) Read(fields ...string) error {
+	if err := orm.NewOrm().Read(this, fields...); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (this *DasInfo) Update(fields ...string) error {
+	if _, err := orm.NewOrm().Update(this, fields...); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (this *DasInfo) Delete() error {
+	if _, err := orm.NewOrm().Delete(this); err != nil {
+		return err
+	}
+	return nil
+}
+````
+- 事务(未测)
+````
+dbObj := orm.NewOrm()
+err = dbObj.begin
+sql = fmt.Sprintf("insert into studentinfo(Id, Stuname, Stuidentify, Stubirth, Stuclass, Stumajor)"+" values(3, 'loe','xxx319918xxx','%s','zzzz','TTTT')", "1992-01-01 11:11:11")
+_, err = dbObj.Raw(sql).Exec()
+if err != nil {
+	dbObj.Rollback()
+	fmt.Println("插入t_studentInfo表出错,事务回滚")
+} else {
+	dbObj.Commit()
+	fmt.Println("插入t_studenInfo表成功,事务提交")
+}
 ````
