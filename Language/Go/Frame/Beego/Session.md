@@ -1,6 +1,6 @@
 # Beego Session
 session可以存在内存或者数据库中，记录内存和redis中的用法
-
+- 无论是那种，都要在basecontroller中进行导包等设置([base写法样例传送门](/Language/Go/Frame/Beego/Base&Json.md))
 ### 内存
 - 配置文件中内容
 ````
