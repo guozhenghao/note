@@ -56,6 +56,7 @@
             - 基础知识
                 - [Bee项目创建工具](/Language/Go/Frame/Beego/Bee.md)
                 - [ORM](/Language/Go/Frame/Beego/ORM.md)
+                - [Session](/Language/Go/Frame/Beego/Session.md)
             - 资料
                 - [Beego学习](https://beego.me/docs/intro/)
     - 资料
