@@ -7,6 +7,8 @@
 - [更改字段名](/DataBase/MongoDB/Use/Rename.md)
 ## 各种语言使用方法
 - [Java](/DataBase/MongoDB/Language/Java.md)
+    - [Demo](/DataBase/MongoDB/Language/JavaDemo.md)
 - [Python](/DataBase/MongoDB/Language/Python.md)
-
+- [Go](/DataBase/MongoDB/Language/Go.md)
+## 资料
 [ *MongoDB官网文档* ](https://docs.mongodb.com/manual/)
