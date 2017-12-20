@@ -3,6 +3,7 @@
 - [Bee项目创建工具](/Language/Go/Frame/Beego/Bee.md)
 - [BaseController+json返回](/Language/Go/Frame/Beego/Base&Json.md)
 - [ORM](/Language/Go/Frame/Beego/ORM.md)
+- [Beego_Session](/Language/Go/Frame/Beego/BeegoSession.md)
 - [Session](/Language/Go/Frame/Beego/Session.md)
 ### 学习网址
 - [Beego学习](https://beego.me/docs/intro/)
