@@ -59,6 +59,7 @@
                 - [ORM](/Language/Go/Frame/Beego/ORM.md)
                 - [Beego_Session](/Language/Go/Frame/Beego/BeegoSession.md)
                 - [Session](/Language/Go/Frame/Beego/Session.md)
+                - [文件的保存或入库](/Language/Go/Frame/Beego/File.md)
             - 资料
                 - [Beego学习](https://beego.me/docs/intro/)
     - 资料
