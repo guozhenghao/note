@@ -3,7 +3,7 @@
 ## 编程语言
 - Java
     - 基础知识
-        - [读写文件](/Language/Java/Use/ReadFile.md) 
+        - [读写文件](/Language/Java/Use/ReadFile.md)
         - [跨域问题](/Language/Java/Use/CrossOrigin.md)
         - [时间相关](/Language/Java/Use/Time.md)
     - 工具类
@@ -17,7 +17,7 @@
         - Spring Boot
             - 基础知识
                 - [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
-            - 小操作              
+            - 小操作
                 - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
                 - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
                 - [多mongodb数据源](/Language/Java/Frame/SpringBoot/MultipleMongoDBDataSource.md)

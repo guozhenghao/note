@@ -12,6 +12,9 @@ import (
 func GetDetail(id string)string {
     //链接
 	db, err := sql.Open("mysql", "用户名:密码@tcp(IP:端口)/库名?charset=utf8")
+	//如果涉及到时区则为：
+	//库名?charset=utf8&loc=Asia%2FShanghai
+	
 	if err != nil {
 		log.Fatalf("Open database error: %s\n", err)
 	}
