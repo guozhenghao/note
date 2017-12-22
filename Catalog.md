@@ -144,3 +144,4 @@
     - [Kafka](/Linux/Install/Kafka.md)
 ## 奇淫巧技
 - [postman-chrome](/Skill/Postman-chrome.md)
+- [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)

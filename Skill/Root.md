@@ -1,2 +1,3 @@
 # 奇淫巧技
-- [postman-chrome](/Skill/Postman-chrome.md)
+- [PostMan-chrome](/Skill/PostMan-chrome.md)
+- [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)
