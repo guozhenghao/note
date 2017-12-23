@@ -134,14 +134,14 @@
 ## Linux
 - 基础知识
 - 系统安装
-    - [centos 7最小版本](/Linux/Install/Centos7.md)
+    - [centos 7最小版本](/Linux/Install/System/Centos7.md)
 - 服务器环境搭建
-    - [Java](/Linux/Install/Java.md)
-    - [CDH](/Linux/Install/CDH.md)
-    - [Hadoop](/Linux/Install/Hadoop.md)
-    - [Spark](/Linux/Install/Spark.md)
-    - [Zookeeper](/Linux/Install/Zookeeper.md)
-    - [Kafka](/Linux/Install/Kafka.md)
+    - [Java](/Linux/Install/Envirment/Java.md)
+    - [CDH](/Linux/Install/Envirment/CDH.md)
+    - [Hadoop](/Linux/Install/Envirment/Hadoop.md)
+    - [Spark](/Linux/Install/Envirment/Spark.md)
+    - [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
+    - [Kafka](/Linux/Install/Envirment/Kafka.md)
 ## 奇淫巧技
 - [postman-chrome](/Skill/Postman-chrome.md)
 - [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)
