@@ -10,3 +10,5 @@
 - [Spark](/Linux/Install/Envirment/Spark.md)
 - [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
 - [Kafka](/Linux/Install/Envirment/Kafka.md)
+## ETC
+- [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)

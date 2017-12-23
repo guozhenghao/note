@@ -142,6 +142,8 @@
     - [Spark](/Linux/Install/Envirment/Spark.md)
     - [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
     - [Kafka](/Linux/Install/Envirment/Kafka.md)
+- ETC
+    - [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)
 ## 奇淫巧技
 - [postman-chrome](/Skill/Postman-chrome.md)
 - [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)
