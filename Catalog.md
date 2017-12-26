@@ -145,5 +145,5 @@
 - ETC
     - [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)
 ## 奇淫巧技
-- [postman-chrome](/Skill/Postman-chrome.md)
+- [postman-chrome](/Skill/PostMan-chrome.md)
 - [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)
