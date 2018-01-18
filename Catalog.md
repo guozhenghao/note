@@ -71,7 +71,7 @@
 - Kotlin
     - 基础知识
         - [安装使用](/Language/Kotlin/Use/Install.md)
-
+- Scala
 ## 数据库
 - MongoDB
     - 基础知识
@@ -122,6 +122,17 @@
     - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
     - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
     - [基于MapboxGL的样式文件自动生成图例](http://blog.csdn.net/wan_yanyan528/article/details/52538686)
+## ELK
+- Elasticsearch
+- Logstash
+- Kibana
+## 大数据
+- Hadoop
+- Spark
+- Spark Streaming
+- Storm
+## 人工智能
+- 未开始
 ## Docker
 - 基础知识
     - [基础命令](/Docker/Use/Command.md)

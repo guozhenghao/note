@@ -3,3 +3,4 @@
 - [Python](/Language/Python/Root.md)
 - [Go](/Language/Go/Root.md)
 - [Kotlin](/Language/Kotlin/Root.md)
+- Scala
