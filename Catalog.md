@@ -74,6 +74,8 @@
 - Scala
 ## 数据库
 - MongoDB
+    - 安装
+        - [Docker](/DataBase/MongoDB/Install/Docker.md)
     - 基础知识
         - [基本操作](/DataBase/MongoDB/Use/Use.md)
         - [改变数据结构](/DataBase/MongoDB/Use/Structure.md)
@@ -91,12 +93,16 @@
     - 各种语言使用方法
         - [Java使用](/DataBase/MapD/Language/Java.md)
 - MySQL
+    - 安装
+        - [Docker](/DataBase/MySQL/Install/Docker.md)
     - 基础知识
         - [GeoSearch](/DataBase/MySQL/Use/GeoSearch.md)
         - [ONLY_FULL_GROUP_BY报错](/DataBase/MySQL/Use/ONLY_FULL_GROUP_BY.md)
     - 各种语言使用方法
         - [Go](/DataBase/MySQL/Language/Go.md)
 - Redis
+    - 安装
+        - [Docker](/DataBase/Redis/Install/Docker.md)
     - 基础知识
         - [设置密码](/DataBase/Redis/Use/SetPassword.md)
     - 各种语言使用方法
@@ -104,6 +110,8 @@
     - 资料
         - [redigo-API](https://godoc.org/github.com/garyburd/redigo/redis)
 - InfluxDB
+    - 安装
+        - [Docker](/DataBase/InfluxDB/Install/Docker.md)
     - 基础知识
         - [基本操作](/DataBase/InfluxDB/Use/Use.md)
 ## 消息中间件
@@ -141,11 +149,6 @@
     - [基础命令](/Docker/Use/Command.md)
     - [镜像加速](/Docker/Use/DownloadSource.md)
     - [更改时区](/Docker/Use/Time.md)
-- 相关安装
-    - [MySQL](/Docker/Install/MySQL.md)
-    - [MongoDB](/Docker/Install/MongoDB.md)
-    - [Redis](/Docker/Install/Redis.md)
-    - [InfluxDB](/Docker/Install/InfluxDB.md)
 - 资料
     - [Github教程](https://www.gitbook.com/book/yeasy/docker_practice/details)
 ## Linux

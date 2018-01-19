@@ -1,4 +1,6 @@
 # Redis学习笔记
+# 安装
+- [Docker](/DataBase/Redis/Install/Docker.md)
 ## 基础知识
 - [设置密码](/DataBase/Redis/Use/SetPassword.md)
 ## 各种语言使用方法
