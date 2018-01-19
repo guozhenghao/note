@@ -142,6 +142,7 @@
     - [MySQL](/Docker/Install/MySQL.md)
     - [MongoDB](/Docker/Install/MongoDB.md)
     - [Redis](/Docker/Install/Redis.md)
+    - [InfluxDB](/Docker/Install/InfluxDB.md)
 - 资料
     - [Github教程](https://www.gitbook.com/book/yeasy/docker_practice/details)
 ## Linux
