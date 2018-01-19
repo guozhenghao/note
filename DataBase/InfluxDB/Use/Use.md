@@ -85,7 +85,9 @@ drop measurement "表名"
     ````
     - http
     ````
-    (POST)http://ip:port/write?db=gzh  (body)testTable,name=gzh,sex=male value=4,count=2
+    (POST)http://ip:port/write?db=gzh  (body)testTable,name=gzh,sex=male value=4,count=2 
+    //如果有密码 u=用户名&p=密码
+    //或者将body内容写到url中q=xxxxxxxxx
     ````
 - 查询数据
 
