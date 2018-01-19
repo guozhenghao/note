@@ -103,6 +103,9 @@
         - [Go](/DataBase/Redis/Language/Go.md)
     - 资料
         - [redigo-API](https://godoc.org/github.com/garyburd/redigo/redis)
+- InfluxDB
+    - 基础知识
+        - [基本操作](/DataBase/InfluxDB/Use/Use.md)
 ## 消息中间件
 - ActiveMQ
     - [Java](/Message/ActiveMQ/Language/Java.md)
