@@ -16,6 +16,8 @@ docker pull influxdb
     ````
     - 设置用户名密码
     ````
+    //网上的教程全是老的，没法用。查看docker file源码得到如下方法。如果以后失效，去github上influxdb中的docker文件中查看源码对应修改即可。
+    
     -e INFLUXDB_ADMIN_USER="用户名" -e INFLUXDB_ADMIN_PASSWORD="密码" -e INFLUXDB_HTTP_AUTH_ENABLED="true"
     ````
 
