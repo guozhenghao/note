@@ -7,7 +7,7 @@
 
 因为chrome现在不让安装非商店下载的插件，中国又有墙，所以提供一种奇淫巧技。
 
-- 下载chrome的postman插件文件(后缀是.crx)(上传了一个，[点击跳转](/Skill/Utils))
+- 下载chrome的postman.crx插件文件(上传了一个，[点击跳转](/Utils/Attachment))
 
 - 打开浏览器的菜单->更多工具->扩展程序
 

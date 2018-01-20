@@ -165,6 +165,6 @@
     - [Kafka](/Linux/Install/Envirment/Kafka.md)
 - ETC
     - [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)
-## 奇淫巧技
-- [postman-chrome](/Skill/PostMan-chrome.md)
-- [SwitchyOmega-chrome](/Skill/SwitchyOmega-chrome.md)
+## 工具
+- [postman-chrome](/Utils/PostMan-chrome.md)
+- [SwitchyOmega-chrome](/Utils/SwitchyOmega-chrome.md)
