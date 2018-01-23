@@ -115,6 +115,8 @@
         - [开启界面端](/DataBase/InfluxDB/Install/WebUI.md)
     - 基础知识
         - [基本操作](/DataBase/InfluxDB/Use/Use.md)
+    - 资料
+        - [官方文档](https://docs.influxdata.com/influxdb/v1.4/introduction/getting_started/)
 ## 消息中间件
 - ActiveMQ
     - [Java](/Message/ActiveMQ/Language/Java.md)
@@ -168,3 +170,4 @@
 ## 工具
 - [postman-chrome](/Utils/PostMan-chrome.md)
 - [SwitchyOmega-chrome](/Utils/SwitchyOmega-chrome.md)
+- [InfluxDBStudio](/Utils/InfluxDBStudio.md)
