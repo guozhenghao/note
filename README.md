@@ -16,4 +16,4 @@
 - [人工智能](/AI/Root.md)
 - [Docker](/Docker/Root.md)
 - [Linux](/Linux/Root.md)
-- [奇淫巧技](/Skill/Root.md)
+- [工具](/Utils/Root.md)
