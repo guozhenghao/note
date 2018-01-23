@@ -20,7 +20,7 @@ drop database "数据库名"
 ````
 - 使用某数据库
 ````
-user 数据库名
+use 数据库名
 ````
 ### 数据保存策略(Retention Policies)
 - 查询数据库的策略
