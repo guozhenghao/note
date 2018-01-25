@@ -47,12 +47,13 @@
         - [反射](/Language/Go/Use/Reflect.md)
         - [读写锁](/Language/Go/Use/Lock.md)
         - [随机数](/Language/Go/Use/Rand.md)
-        - [二维码相关](/Language/Go/Use/QRCode.md)
         - [Json](/Language/Go/Use/Json.md)
     - 工具类
         - [进制转换](/Language/Go/Utils/Binary.md)
         - [发送邮件](/Language/Go/Utils/Email.md)
         - [snowflake](/Language/Go/Utils/Snowflake.md)
+        - [定时cron](/Language/Go/Utils/Cron.md)
+        - [二维码相关](/Language/Go/Utils/QRCode.md)
     - 框架
         - Beego
             - 基础知识
