@@ -161,6 +161,7 @@ for item.Next(&person2){
 ````
 person3 := Person{}
 iter := c.Pipe([]bson.M{bson.M{"$match":bson.M{"name":"qwer"}},bson.M{"$sort":bson.M{"age":1}}}).Iter()
+//数组中的每一项不写bson.M也行: []bson.M{{"$match":bson.M{"name":"qwer"}},{"$sort":bson.M{"age":1}}}
 for iter.Next(&person3){
 	fmt.Println(person3)
 }
