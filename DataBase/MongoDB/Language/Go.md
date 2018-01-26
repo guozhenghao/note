@@ -1,5 +1,6 @@
 # Go语言使用mongodb
-### 建立连接
+`go get gopkg.in/mgo.v2`
+### 建立连接Demo
 ````
 package mongo
 
@@ -67,4 +68,100 @@ func WithMongoCollection(collectionName string, s func(*mgo.Collection) error) e
 	return s(c)
 }
 
+````
+
+### 使用
+
+- 连接类
+````
+package mydatabase
+
+import (
+	"time"
+
+	"gopkg.in/mgo.v2"
+)
+
+func GetMongoSession(user,password,ip,port,databaseName string) *mgo.Session {
+	var mongosession *mgo.Session
+	dialInfo := &mgo.DialInfo{
+		Addrs:     []string{ip+":"+port},
+		Direct:    false,
+		Timeout:   time.Second * 30,
+		Database:  databaseName,
+		Source:    "admin",
+		Username:  user,
+		Password:  password,
+		PoolLimit: 4096, // Session.SetPoolLimit
+	}
+	mongosession, err := mgo.DialWithInfo(dialInfo)
+	if err != nil {
+		//g.Log.Error("连接mongodb失败:%s", err.Error())
+		return nil
+	}
+	return mongosession
+}
+
+//使用时建立连接代码demo
+db := mydatabase.GetMongoSession("用户名","密码","ip","port","库名")
+c := db.DB("库名").C("表名")
+````
+#### 所有的操作都可以使用结构体或者bson，后面的有些操作就不分两种情况写了
+- 插入
+````
+type Person struct {
+	Name	string	`bson:"name"`
+	Age 	int  `bson:"age"`
+}
+person1 := &Person{"zhang",1}
+//通过结构体插入，bson直接插入
+err := c.Insert(person1,bson.M{"name":"li","age":2})
+if err != nil{
+	fmt.Println(err.Error())
+}
+````
+
+- 删除
+````
+person1 := &Person{"zhang",1}
+//结构体
+_, err := c.RemoveAll(person1)
+//bson
+_, err := c.RemoveAll(bson.M{"name":"li","age":2})
+if err != nil{
+	fmt.Println(err.Error())
+}
+````
+
+- 修改
+````
+person1 := &Person{"li",2}
+//直接将后面的部分整体替换前面部分
+_,err := c.Update(bson.M{"name":"li"},bson.M{bson.M{"name":"qwer"})
+//使用$set 将前面部分的对应字段进行修改
+_,err := c.Update(bson.M{"name":"li"},bson.M{"$set":bson.M{"name":"qwer"}})
+//上面两个update只能更新一条，updateall可以将匹配的全部替换，但是脾虚使用$set
+_,err := c.UpdateAll(bson.M{"name":"li"},bson.M{"$set":bson.M{"name":"qwer"}})
+if err != nil{
+	fmt.Println(err.Error())
+}
+````
+- 查询
+````
+var person2 Person
+//One方法相当于findOne
+err = c.Find(bson.M{"name": "li"}).One(&person2)
+//查询多个结果用Iter方法
+item := c.Find(bson.M{}).Iter()
+for item.Next(&person2){
+	fmt.Println(person2.Name)
+}
+````
+- Pipe(aggregate)
+````
+person3 := Person{}
+iter := c.Pipe([]bson.M{bson.M{"$match":bson.M{"name":"qwer"}},bson.M{"$sort":bson.M{"age":1}}}).Iter()
+for iter.Next(&person3){
+	fmt.Println(person3)
+}
 ````
