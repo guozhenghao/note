@@ -3,7 +3,7 @@
 
     `http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html`
 
-    file1和file2都需要下载，解压后放到同一个文件夹下，然后在安装
+    file1和file2都需要下载，解压后放到同一个文件夹下(或将file2中的文件，放入对应的file1文件夹中，版本不同，file2中的文件不一样，视情况而定)，然后在安装
 
 - 安装
     - 如果提示32/64版本问题，可以在database/stage/cvu下的cvu_prereq.xml中，添加如下代码(在<CERTIFIED_SYSTEMS>标签下)
