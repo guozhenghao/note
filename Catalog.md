@@ -120,6 +120,9 @@
         - [基本操作](/DataBase/InfluxDB/Use/Use.md)
     - 资料
         - [官方文档](https://docs.influxdata.com/influxdb/v1.4/introduction/getting_started/)
+- Oracle
+    - 安装
+        - [Windows](/DataBase/Oracle/Install/Windows.md)
 ## 消息中间件
 - ActiveMQ
     - [Java](/Message/ActiveMQ/Language/Java.md)
