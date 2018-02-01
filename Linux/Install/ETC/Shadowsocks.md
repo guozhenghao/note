@@ -18,10 +18,18 @@
     }
     ````
 3. 启动服务: `ssserver -c /etc/shadowsocks/shadowsocks.json -d start`
-3. 终止服务: `ssserver -c /etc/shadowsocks/shadowsocks.json -d stop`
-4. 建议:
+4. 终止服务: `ssserver -c /etc/shadowsocks/shadowsocks.json -d stop`
+5. 安全组或者防火墙打开
+6. 建议:
     - 如果是自己搭建, 建议端口设置的随机一点. 不然会被其他的陌生人侦测到, 无节制的蹭网影响正常使用
     - 如果不想自己搭建,可以去 shadowsocks 官网购买账号, 很稳定. 一年16刀(需要翻墙才能访问)
+
+## 如何连接
+查看如下网址：
+
+    `https://github.com/shadowsocks/shadowsocks/wiki/Shadowsocks-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E`
+
+ios可以使用wingy
 
 ## 客户端连接 socket 代理服务
 1. win下,启动 shadowsocks客户端 会直接将socket代理转为HTTP代理.
