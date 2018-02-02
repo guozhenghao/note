@@ -136,6 +136,7 @@
     - [tippecanoe](/MapBox/Utils/Tippecanoe.md)
     - [tileserver-gl-light](/MapBox/Utils/TileserverGlLight.md)
     - [maputnik](/MapBox/Utils/Maputnik.md)
+    - [本地化字体制作](/MapBox/Utils/Fontnik.md)
 - 资料
     - [tippecanoe官方文档](https://github.com/mapbox/tippecanoe)
     - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)
