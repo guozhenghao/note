@@ -16,3 +16,5 @@
         `genfontgl Ubuntu-BoldItalic.ttf /root/map/test/`
 
 因为字体文件较多，可在https://www.mapbox.com/install/studio/中创建一张地图后，在字体列表预览，然后选择需要的字体。
+
+[--->参考网址<---](https://zhuanlan.zhihu.com/p/31419736)

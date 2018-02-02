@@ -12,3 +12,4 @@
 - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
 - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
 - [基于MapboxGL的样式文件自动生成图例](http://blog.csdn.net/wan_yanyan528/article/details/52538686)
+- [MapBox不错的操作资料](https://zhuanlan.zhihu.com/c_139752171)
