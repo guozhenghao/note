@@ -1,6 +1,6 @@
 # 基础命令
 打开kibana，在左侧侧边栏中点击"dev tools"
-- 查看健康状态
+- 查看所有index
     - console:
 
         `GET /_cat/health?v`
@@ -8,5 +8,31 @@
 
         `curl -XGET 'localhost:9200/_cat/health?v&pretty'`
         
-        后面操作注意get和put等修改请求就行，只写console中的用法了
-- http://www.ruanyifeng.com/blog/2017/08/elasticsearch.html 留坑
+- index相关
+    - 新建
+        
+        `PUT /index_name`
+    - 删除
+
+        `DELETE /index_name`
+
+- document相关
+    - 插入/更新
+
+        ````
+        PUT /index_name/type_name/id
+        {
+            "name":"ZhangSan"
+        }
+        ````
+        
+        id不指定会随机生成 如：AV3qGfrC6jMbsbXb6k1p
+
+    - 查询
+        - 查询某一条
+            
+            `GET /index_name/type_name/id`
+        - 查询所有
+
+            `GET /index_name/type_name/_search`
+    
