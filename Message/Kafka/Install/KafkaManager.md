@@ -50,7 +50,7 @@ kafka-manager是yahoo开发的一个kafka管理检测系统，安装所需环境
         我上传了两个编译好的版本
         
         -->[kafka-manager-1.3.0.4.zip](/Message/Kafka/Install/kafka-manager-1.3.0.4.zip)<--
-        
+
         -->[kafka-manager-1.3.3.7.zip](/Message/Kafka/Install/kafka-manager-1.3.3.7.zip)<--
         
         
@@ -58,3 +58,10 @@ kafka-manager是yahoo开发的一个kafka管理检测系统，安装所需环境
 
 ## 配置并运行
     
+解压完成后，进入解压目录下的/conf文件夹，修改application.conf文件，将`kafka-manager.zkhost`设置为自己的zk地址
+
+进入解压目录下的/bin文件夹，执行`./kafka-manager`即可启动，默认端口是9000，如果需要更改启动的端口，使用`./kafka-manager -Dhttp.port=9001`启动即可。
+
+如要后台启动，使用nohup即可
+
+启动完成后，在浏览器访问该ip:port，添加一个cluster，hosts填写zk的ip:port，version选择与自己最相近的即可，如果没有JMX不要勾选，然后save即可
