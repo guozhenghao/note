@@ -37,3 +37,7 @@
 然后就可以启动了，如果启动后报错，错误是OutOfMemoryError，打开cdh管理界面，点击kafka，按照下图设置完成后重启即可
 
 ![OutOfMemoryError解决方法](/res/kafka_install_cdh_outOfMemoryError.png)
+
+如果需要外网链接，则需要修改advertised参数，打开cdh管理界面，点击kafka，按照下图设置完成后重启即可。外网端口与内网需要设置一样，因为cdh无法向正常安装那样更改listener设置，只能监听设置中的唯一端口。
+![外网链接解决方法](/res/kafka_install_cdh_advertised.png)
+kafka_install_cdh_advertised
