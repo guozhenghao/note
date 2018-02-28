@@ -129,6 +129,10 @@
 - ActiveMQ
     - [Java](/Message/ActiveMQ/Language/Java.md)
 - Kafka
+    - 安装
+        - [CDH安装](/Message/Kafka/Install/CDH.md)
+        - [普通服务器环境安装](/Message/Kafka/Install/Normal.md)
+    - 使用
 - 资料
     - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
 ## MapBox
