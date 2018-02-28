@@ -36,4 +36,4 @@
 
 然后就可以启动了，如果启动后报错，错误是OutOfMemoryError，打开cdh管理界面，点击kafka，按照下图设置完成后重启即可
 
-![OutOfMemoryError解决方法](/res/kafka_install_cdh_outofmemoryerror.png)
+![OutOfMemoryError解决方法](/res/kafka_install_cdh_outOfMemoryError.png)
