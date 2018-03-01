@@ -43,3 +43,5 @@ zookeeper.connect=zk1ip:2181
     `./kafka-console-consumer.sh --zookeeper 本机ip:2181 --topic testkafka`
 
 能够正常收发消息则成功
+
+##### [-->部署参考网址<--](https://www.cnblogs.com/wangyangliuping/p/5546465.html)
