@@ -197,6 +197,7 @@
     - [postman](/Utils/PostMan-chrome.md)
     - [SwitchyOmega](/Utils/SwitchyOmega-chrome.md)
     - [GreenHub](/Utils/GreenHub-chrome.md)
+    - [OctoTree](/Utils/OctoTree-chrome.md)
 - windows
     - [InfluxDBStudio](/Utils/InfluxDBStudio.md)
     - [NavicatPremium12注册](/Utils/NavicatPremium.md)
