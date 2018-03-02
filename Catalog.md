@@ -193,8 +193,10 @@
 - ETC
     - [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)
 ## 工具
-- [postman-chrome](/Utils/PostMan-chrome.md)
-- [SwitchyOmega-chrome](/Utils/SwitchyOmega-chrome.md)
-- [InfluxDBStudio](/Utils/InfluxDBStudio.md)
-- [GreenHub](/Utils/GreenHub.md)
-- [NavicatPremium12注册](/Utils/NavicatPremium.md)
+- chrome插件
+    - [postman](/Utils/PostMan-chrome.md)
+    - [SwitchyOmega](/Utils/SwitchyOmega-chrome.md)
+    - [GreenHub](/Utils/GreenHub-chrome.md)
+- windows
+    - [InfluxDBStudio](/Utils/InfluxDBStudio.md)
+    - [NavicatPremium12注册](/Utils/NavicatPremium.md)

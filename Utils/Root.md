@@ -1,6 +1,8 @@
 # 工具
-- [PostMan-chrome](/Utils/PostMan-chrome.md)
-- [SwitchyOmega-chrome](/Utils/SwitchyOmega-chrome.md)
+## chrome插件
+- [PostMan](/Utils/PostMan-chrome.md)
+- [SwitchyOmega](/Utils/SwitchyOmega-chrome.md)
+- [GreenHub](/Utils/GreenHub-chrome.md)
+## windows
 - [InfluxDBStudio](/Utils/InfluxDBStudio.md)
-- [GreenHub](/Utils/GreenHub.md)
 - [NavicatPremium12注册](/Utils/NavicatPremium.md)
