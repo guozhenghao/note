@@ -47,12 +47,9 @@ kafka-manager是yahoo开发的一个kafka管理检测系统，安装所需环境
     
     - 直接下载别人编译好的
 
-        我上传了两个编译好的版本
-        
-        -->[kafka-manager-1.3.0.4.zip](/Message/Kafka/Install/kafka-manager-1.3.0.4.zip)<--
+        我上传了个编译好的版本
 
         -->[kafka-manager-1.3.3.7.zip](/Message/Kafka/Install/kafka-manager-1.3.3.7.zip)<--
-        
         
         下载后直接在部署位置解压即可
 
