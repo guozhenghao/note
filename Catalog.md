@@ -134,6 +134,13 @@
         - [普通服务器环境安装](/Message/Kafka/Install/Normal.md)
         - [kafka-manager](/Message/Kafka/Install/KafkaManager.md)
     - 使用
+    - 各种语言操作
+        - Java
+            - 使用
+                - [生产者和消费者简单样例](/Message/Kafka/Language/Java/ProducerAndConsumerDemo.md)
+            - 资料
+                - [JavaKafkaAPI](http://kafka.apache.org/10/javadoc/index.html?org/apache/kafka)
+                - [自定义Serializer](http://blog.csdn.net/u012737182/article/details/54135533)  
 - 资料
     - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
 ## MapBox

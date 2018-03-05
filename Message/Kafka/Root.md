@@ -6,5 +6,5 @@
 ## 使用
 
 ## 各种语言操作
-- [Java](/Message/Kafka/Language/Java.md)
+- [Java](/Message/Kafka/Language/Java/Java.md)
 ## 使用
