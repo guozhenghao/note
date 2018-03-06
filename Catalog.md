@@ -179,13 +179,7 @@
 - Storm
 ## 人工智能
 - 未开始
-## Docker
-- 基础知识
-    - [基础命令](/Docker/Use/Command.md)
-    - [镜像加速](/Docker/Use/DownloadSource.md)
-    - [更改时区](/Docker/Use/Time.md)
-- 资料
-    - [Github教程](https://www.gitbook.com/book/yeasy/docker_practice/details)
+
 ## Linux
 - 基础知识
 - 系统安装
@@ -197,6 +191,13 @@
     - [Spark](/Linux/Install/Envirment/Spark.md)
     - [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
     - [Kafka](/Linux/Install/Envirment/Kafka.md)
+- Docker
+    - 基础知识
+        - [基础命令](/Docker/Use/Command.md)
+        - [镜像加速](/Docker/Use/DownloadSource.md)
+        - [更改时区](/Docker/Use/Time.md)
+    - 资料
+        - [Github教程](https://www.gitbook.com/book/yeasy/docker_practice/details)
 - ETC
     - [Shadowsocks](/Linux/Install/ETC/Shadowsocks.md)
 ## 工具
