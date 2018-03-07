@@ -6,6 +6,7 @@
         - [读写文件](/Language/Java/Use/ReadFile.md)
         - [跨域问题](/Language/Java/Use/CrossOrigin.md)
         - [时间相关](/Language/Java/Use/Time.md)
+        - [读取yaml配置文件](/Language/Java/Use/LoadYaml.md)
     - 工具类
         - [UTC时间相互转换](/Language/Java/Utils/UTCTransform.md)
         - [判断点在面内](/Language/Java/Utils/GeometyMethod.md)
@@ -14,7 +15,6 @@
         - [正态分布](/Language/Java/Utils/NormalDistribution.md)
         - [GeoHash](/Language/Java/Utils/GeoHash.md)
         - [绘制抛物线](/Language/Java/Utils/Parabola.md)
-        - [读取yaml配置文件](/Language/Java/Utils/LoadYaml.md)
     - 框架
         - Spring Boot
             - 基础知识
