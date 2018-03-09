@@ -16,5 +16,6 @@
 ## 框架
 - [Spring Boot](/Language/Java/Frame/SpringBoot.md)
 ## maven相关 
+- [Maven项目打包](/Language/Java/Maven/Build.md)
 - [修改下载源](/Language/Java/Maven/ChangeSource.md)
 - [将依赖下载到项目中](/Language/Java/Maven/DependenceInProject.md)

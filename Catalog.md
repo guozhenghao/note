@@ -27,8 +27,9 @@
             - 资料
                 - [gitbook参考指南](https://www.gitbook.com/book/qbgbook/spring-boot-reference-guide-zh/details)
     - Maven
-        - [修改下载源](/Language/Java/Use/Maven/ChangeSource.md)
-        - [将依赖下载到项目中](/Language/Java/Use/Maven/DependenceInProject.md)
+        - [Maven项目打包](/Language/Java/Maven/Build.md)
+        - [修改下载源](/Language/Java/Maven/ChangeSource.md)
+        - [将依赖下载到项目中](/Language/Java/Maven/DependenceInProject.md)
 - Python
     - 基础知识
         - [网络请求](/Language/Python/Use/Net.md)
