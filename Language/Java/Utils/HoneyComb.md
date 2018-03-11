@@ -1,7 +1,7 @@
 # 蜂窝网格生成算法
 
 传入区域对角线两点，生成蜂窝网格，可以得到网格中心点或边界点
-````
+```java
 import java.util.ArrayList;
 import java.util.List;
 
@@ -81,4 +81,4 @@ public class BeeHiveCell {
 		System.out.println(BeeHiveCell.getBeeCell(lngy, latx, cell));
 	}
 }
-````
+```
