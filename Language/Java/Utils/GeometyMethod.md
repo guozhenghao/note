@@ -38,7 +38,7 @@ public class GeometyMethod {
      }
 }
 
-```java
+```
 - 使用示例
 ```java
 GeometyMethod gm = new GeometyMethod();
@@ -47,4 +47,4 @@ String borderString = POLYGON((116.22 39.90,中间的一堆点,116.22 39.90));
 Polygon pol = gm .getPolygon( borderString);
 Boolean bl = gm .withinGeo( lon, lat , pol );
 
-```java
+```
