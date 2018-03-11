@@ -3,7 +3,7 @@
 UTC时间是Long型的时间，代表的是从1970年01月01日 00:00:00到现在一共有多少毫秒
 
 - 工具类代码
-````
+```java
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -55,4 +55,4 @@ public class MyDateTransf {
      }
 }
 
-````
+```
