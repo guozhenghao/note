@@ -1,7 +1,7 @@
 # 谷歌网格与经纬度坐标的相互转换
 
 - 经纬度转谷歌网格编号
-````
+```java
 public String transxy(double lng, double lat,int zoom){
     int[] gridxy = new int[2];
     double pow= Math.pow(2,zoom);
@@ -11,10 +11,10 @@ public String transxy(double lng, double lat,int zoom){
     gridxy[1]= (int)(((1 - res / Math.PI) / 2) * pow);
     return gridxy[0]+"-"+gridxy[1];
 }
-````
+```
 
 - 谷歌网格编号转经纬度坐标
-````
+```java
 public double[] toLonLat(String lonLat,int zoom){
     double lon = Double.parseDouble(lonLat.split("-")[0]);
     double lat = Double.parseDouble(lonLat.split("-")[1]);
@@ -25,5 +25,5 @@ public double[] toLonLat(String lonLat,int zoom){
     double[] result = {(lon_min + lon_max)/2,(lat_min + lat_max) /2};
     return result;
 }
-````
+```
 
