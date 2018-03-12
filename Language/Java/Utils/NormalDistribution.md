@@ -1,5 +1,5 @@
 # 正态分布
-````
+```java
 import java.text.DecimalFormat;
 import java.util.*;
 
@@ -72,4 +72,4 @@ public class NormalDistribution {
     }
 }
 
-````
+```
