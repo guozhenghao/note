@@ -2,7 +2,7 @@
 ### 老版抛物线绘制
 传入两点坐标，不支持分别设置两点高度，只能为地面上两点
 - 使用两点式进行计算，默认45度入射，如果需要修改或者设置为传参方式，修改centerHigh参数即可
-````
+```java
 
 import java.util.LinkedList;
 import java.util.List;
@@ -93,13 +93,13 @@ public class Parabola {
 	
 }
 
-````
+```
 
 ### 新版抛物线
 传入两点坐标包括高度(单位:m),如果为平面上的点，高度置0即可
 - 使用克拉默法则进行计算，默认45度入射，如果需要修改或者设置为传参方式，修改centerHigh参数即可
 - 若两点高度不一样，则中点不在中间，入射会变大或变小，主要是看这个定义的中点离高点近还是远点近
-````
+```java
 
 import java.util.LinkedList;
 import java.util.List;
@@ -253,4 +253,4 @@ public class ParabolaNew {
 	}	
 }
 
-````
+```
