@@ -1,6 +1,6 @@
 # 将依赖下载到项目中
 - 将代码复制到pom文件project层中最后
-````
+```xml
 <build>
     <plugins>
         <plugin>
@@ -36,4 +36,4 @@
         </plugin>
     </plugins>
 </build>
-````
+```xml
