@@ -20,7 +20,7 @@
     - 框架
         - Spring Boot
             - 基础知识
-                - [三层结构样例](/Language/Java/Frame/SpringBoot/Structure.md)
+            
             - 小操作
                 - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
                 - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)

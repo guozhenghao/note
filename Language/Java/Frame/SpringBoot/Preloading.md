@@ -1,6 +1,6 @@
 # Spring Boot 启动时预加载
 - 预加载mongodb中数据的方法样例
-````
+```java
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,4 +43,4 @@ public class MyStartupRunner implements CommandLineRunner {
      }
 }
 
-````
+```
