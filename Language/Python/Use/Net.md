@@ -2,7 +2,7 @@
 
 ## 需要header、cookie、gzip
 
-````
+```python
 url = r'https://xxxxxxxxxxxxxx'
 # 需要什么添什么
 header = {
@@ -23,11 +23,11 @@ if encoding == 'gzip':
 else:
     content = response.read()
 jsonFile = json.loads(content)
-````
+```
 
 ## 不需要
-````
+```python
 response = urllib2.urlopen(r'http://xxxxx')
 jsonInfo = response.read()
 jsonFile = json.loads(jsonInfo)
-````
+```
