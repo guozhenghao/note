@@ -41,7 +41,7 @@
     - 在Scrapy抓取时, 偶尔碰到(神坑)
     - `u'\xd6\xd0\xb9\xfa'` 是用unicode类型封装的gbk编码, 需要先处理unicode类型, 然后可得到gbk编码的字符串
     - unicode类型不是字符串类型. 所以unicode类型转字符串使用 encode 方法
-        ````
+        ```python
         import codecs
         item = u'\xd6\xd0\xb9\xfa'
         # 意如其名
@@ -50,4 +50,4 @@
         # 使用下标取字符串, 然后解码转义字符
         item = codecs.escape_decode(item[0])
         # item: ('\xd6\xd0\xb9\xfa', 16)
-        ````
+        ```
