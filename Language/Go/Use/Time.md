@@ -1,6 +1,6 @@
 # Go时间操作
 - 先上个例子
-````
+```go
 package main
 
 import (
@@ -22,7 +22,7 @@ func main() {
 	tm2, _ := time.Parse("01/02/2006", "02/08/2015")
 	fmt.Println(tm2.Unix())
 }
-````
+```
 - 在Go语言里，fomrat中的这些数字都是有特殊函义的，不是随便指定的数字，见下面列表：
     - 月份 1,01,Jan,January
     - 日　 2,02,_2
@@ -35,6 +35,4 @@ func main() {
     - 时区字母缩写 MST
 
 - 使用时为了方便，可以直接：
-````
-tm := time.Now().Format("")
-````
+`tm := time.Now().Format("")`
