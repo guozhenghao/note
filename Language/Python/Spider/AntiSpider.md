@@ -7,7 +7,7 @@ scrapy框架下载setting中将`#DOWNLOAD_DELAY = 3`打开
 
 在middlewares中加入：
 
-````
+```python
 class RotateUserAgentMiddleware(UserAgentMiddleware):
     '''
         自动切换 UA 标识（for 反爬虫）
@@ -64,14 +64,14 @@ class RotateUserAgentMiddleware(UserAgentMiddleware):
         "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
         ]
         
-````
+```
 
 然后在setting中加入该中间件类：
-````
+```python
 SPIDER_MIDDLEWARES = {
    'lianjiaSpider.middlewares.RotateUserAgentMiddleware': 543,
 }
-````
+```
 
 - 代理ip
 
