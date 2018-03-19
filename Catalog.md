@@ -149,6 +149,12 @@
             - 资料
                 - [JavaKafkaAPI](http://kafka.apache.org/10/javadoc/index.html?org/apache/kafka)
                 - [自定义Serializer](http://blog.csdn.net/u012737182/article/details/54135533)  
+        - Python
+            - 使用
+                - [生产者和消费者简单样例](/Message/Kafka/Language/Java/ProducerAndConsumerDemo.md)
+            - 资料
+                - [kafka-python](https://github.com/dpkp/kafka-python)
+
 - 资料
     - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
 ## MapBox
