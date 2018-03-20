@@ -17,6 +17,7 @@
         - [正态分布](/Language/Java/Utils/NormalDistribution.md)
         - [GeoHash](/Language/Java/Utils/GeoHash.md)
         - [绘制抛物线](/Language/Java/Utils/Parabola.md)
+        - [SnowFlake](/Language/Java/Utils/SnowFlake.md)
     - 框架
         - Spring Boot
             - 基础知识
