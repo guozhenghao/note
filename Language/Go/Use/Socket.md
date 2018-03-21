@@ -2,7 +2,7 @@
 
 ### 监听
 listener
-````
+```go
 package main
 
 import (
@@ -46,10 +46,10 @@ func handleClient(conn net.Conn) {
 		conn.Write([]byte("返回的信息 \n"))
 	}
 }
-````
+```
 ### 发送
 sender
-````
+```go
 package main
 
 import (
@@ -83,4 +83,4 @@ func main() {
 	os.Exit(0)
 }
 
-````
+```
