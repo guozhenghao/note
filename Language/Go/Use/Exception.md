@@ -5,7 +5,7 @@
     - defer fun()  相当于finally
 
 defer为必执行方法，当该方法执行完成或出现错误中断时，程序从该出向上寻找defer方法，所以一般将defer写在所需方法的开头。
-````
+```go
 func test(){
     defer func(){
         // 判断程序是否有异常
@@ -20,5 +20,5 @@ func test(){
     b := []byte{10}
     fmt.Printf("%x",b[100])
 }
-````
+```
 
