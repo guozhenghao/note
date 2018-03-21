@@ -1,6 +1,6 @@
 # Go语言WebServer
 - 使用默认的handler，然后通过path来调用不同方法
-````
+```go
 package main
 
 import (
@@ -36,10 +36,10 @@ func main() {
 		log.Fatal("ListenAndServe: ", err)
 	}
 }
-````
+```
 
 - 自己创建handler，然后实现跳转
-````
+```go
 package main
 
 import (
@@ -88,4 +88,4 @@ func main() {
 		log.Fatal("ListenAndServe: ", err)
 	}
 }
-````
+```
