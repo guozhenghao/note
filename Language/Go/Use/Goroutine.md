@@ -7,7 +7,7 @@
 
   默认情况下，channel接收和发送数据都是阻塞的，除非另一端已经准备好，这样就使得Goroutines同步变的更加的简单，而不需要显式的lock。所谓阻塞，也就是如果读取（value := <-ch）它将会被阻塞，直到有数据接收。其次，任何发送（ch<-5）将会被阻塞，直到数据被读出。
 
-````
+```go
 package main
 
 import "fmt"
@@ -30,12 +30,12 @@ func main() {
 
 	fmt.Println(x, y, x + y)
 }
-````
+```
 
 
 ### Buffered Channels
 - Go也允许指定channel的缓冲大小，很简单，就是channel可以存储多少元素。ch:= make(chan bool, 4)，创建了可以存储4个元素的bool 型channel。在这个channel 中，前4个元素可以无阻塞的写入。当写入第5个元素时，代码将会阻塞，直到其他goroutine从channel 中读取一些元素，腾出空间。
-````
+```go
 package main
 
 import "fmt"
@@ -47,9 +47,9 @@ func main() {
 	fmt.Println(<-c)
 	fmt.Println(<-c)
 }
-````
+```
 - 自己写的一个例子，避免上面的报错，又能显示移除这个的作用
-````
+```go
 package main
 
 import (
@@ -75,10 +75,10 @@ func delete(c *chan int){
 		time.Sleep(time.Second * 2)
 	}
 }
-````
+```
 ### Range和Close
 - 可以通过range，像操作slice或者map一样操作缓存类型的channel
-````
+```go
 package main
 
 import (
@@ -103,7 +103,7 @@ func main() {
 		fmt.Println(i)
 	}
 }
-````
+```
 
   for i := range c能够不断的读取channel里面的数据，直到该channel被显式的关闭。上面代码我们看到可以显式的关闭channel，生产者通过内置函数close关闭channel。关闭channel之后就无法再发送任何数据了，在消费方可以通过语法v, ok := <-ch测试channel是否被关闭。如果ok返回false，那么说明channel已经没有任何数据并且已经被关闭。
 
@@ -115,7 +115,7 @@ func main() {
 - Go里面提供了一个关键字select，通过select可以监听channel上的数据流动。
 
   select默认是阻塞的，只有当监听的channel中有发送或接收可以进行时才会运行，当多个channel都准备好的时候，select是随机的选择一个执行的。
-````
+```go
 package main
 
 import "fmt"
@@ -151,19 +151,19 @@ func main() {
 	}()
 	insert(a,b, quit)
 }
-````
+```
 - 在select里面还有default语法，select其实就是类似switch的功能，default就是当监听的channel都没有准备好的时候，默认执行的（select不再阻塞等待channel）。
-````
+```go
 select {
 case i := <-c:
 	// use i
 default:
 	// 当c阻塞的时候执行这里
 }
-````
+```
 ### 超时
 - 有时候会出现goroutine阻塞的情况，那么我们如何避免整个程序进入阻塞的情况呢？我们可以利用select来设置超时
-````
+```go
 package main
 
 import "time"
@@ -187,7 +187,7 @@ func main() {
 	<-o
 }
 
-````
+```
 ### runtime goroutine
 
 - runtime包中有几个处理goroutine的函数：
