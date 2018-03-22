@@ -13,7 +13,7 @@
 
 ### RWMutex读锁
 - 代码示例
-````
+```go
 package main
 
 import (
@@ -44,7 +44,7 @@ func read(i int) {
 	println(i, "read end")
 
 }
-````
+```
 - 执行结果
 ````
 1 read start
@@ -83,7 +83,7 @@ func read(i int) {
 
 ### RWMutex写锁
 - 代码示例
-````
+```go
 package main
 
 import (
@@ -114,7 +114,7 @@ func write(i int) {
 	println(i, "write end")
 
 }
-````
+```
 - 执行结果
 ````
 1 write start
@@ -152,7 +152,7 @@ func write(i int) {
 
 ### WaitGroup等待组
 
-````
+```go
 package main
 
 import (
@@ -182,4 +182,4 @@ func myPrint(i int) {
 	wp.Down()
 
 }
-````
+```
