@@ -17,7 +17,7 @@
 ### reflect.Type
 ##### reflect.TypeOf(i interface{}) Type
 - 因为reflect.Typeof的参数是空接口类型，因此可以接收任意类型的数据。 TypeOf()的返回值是这个接口类型对应的reflect.Type对象。通过Type提供的一些方法，就可以获得这个接口实际的静态类型。
-````
+```go
 import (
   "fmt"
   "reflect"
@@ -41,9 +41,9 @@ func main() {
   fmt.Println(reflect.TypeOf(foo))    //main.Foo
 
 }
-````
+```
 - 查看reflect包的源代码可以看到，reflect.Type的定义如下：
-````
+```go
 type Type interface {
   Align() int
   FieldAlign() int
@@ -58,9 +58,9 @@ type Type interface {
   Len() int
   .....
 }
-````
+```
 - 可见reflect.Type是一个接口类型的对象，这个接口包含了很多方法，像Name(),Field(),Method()等，下面再通过实例来了解几个比较重要的方法。
-````
+```go
 type Foo struct {
   X string
   Y int
@@ -82,12 +82,12 @@ func main() {
   fmt.Println(typ.Name())     //Foo ，返回结构体的名字
 
 }
-````
+```
 
 - 上面的例子可见，通过Type.String(),Type.Name()方法就可以获得接口对应的静态类型。 下面几个方法，显示了Type的更多功能，特别是对于结构体对象而言。
 
 - Field相关的方法
-````
+```go
 var f Foo
 typ := reflect.TypeOf(f)
 for i := 0; i < typ.NumField(); i++ {
@@ -100,9 +100,9 @@ for i := 0; i < typ.NumField(); i++ {
 
 field2, _ := typ.FieldByName("x") //等价于typ.Field(0)，返回的也是StructField对象
 fmt.Println(field2.Name)          // x
-````
+```
 - Type的Field是一个StructFiled对象：
-````
+```go
 type StructField struct {
     Name    string
     PkgPath string
@@ -113,9 +113,9 @@ type StructField struct {
     Index     []int     // index sequence for Type.FieldByIndex
     Anonymous bool      // is an embedded field
 }
-````
+```
 - Method相关的方法
-````
+```go
 var f Foo
 typ := reflect.TypeOf(f)
 
@@ -124,9 +124,9 @@ m := typ.Method(0)
 fmt.Println(m.Name) //do
 fmt.Println(m.Type) //func(main.Foo)
 fmt.Println(m.Func) //<func(main.Foo) Value>, 这个返回的是reflect.Value对象，后面再讲
-````
+```
 - Kind方法Type和Value都有，它返回的是对象的基本类型，例如int,bool,slice等，而不是静态类型。
-````
+```go
 var f = Foo{}
 typ := reflect.TypeOf(f)
 fmt.Println(typ)        //main.Foo
@@ -136,9 +136,9 @@ var f2 = &Foo{}
 typ2 := reflect.TypeOf(f2)
 fmt.Println(typ2)        //*main.Foo
 fmt.Println(typ2.Kind()) //ptr
-````
+```
 - kind()的返回值如下：
-````
+```go
 const (
   Invalid Kind = iota
   Bool
@@ -168,12 +168,12 @@ const (
   Struct
   UnsafePointer
 )
-````
+```
 
 ### reflect.Value
 ##### reflect.ValueOf(i interface{}) Value
 - reflect.ValueOf()的返回值类型为reflect.Value,它实现了interface{}参数到reflect.Value的反射
-````
+```go
 type Foo struct {
   X string
   Y int
@@ -194,9 +194,9 @@ func main() {
   //Value.String()方法对string类型的数据做了特殊处理，会直接返回字符串的值。
   //其它类型对象返回的格式都是"<Type% Value>"
 }
-````
+```
 - reflact.Value对象可以通过调用Interface()方法，再反射回interface{}对象
-````
+```go
               reflect.ValueOf()                        Interface()
 interface{} ---------------------> reflect.Value -------------------> interface{}
 
@@ -207,11 +207,11 @@ var f = Foo{"abc", 123}
 fmt.Println(f) //{abc 123}
 fmt.Println(reflect.ValueOf(f).Interface() == f)  //true
 fmt.Println(reflect.ValueOf(f).Interface())  //{abc 123}
-````
+```
 - Filed方法
 
   和Type的Filed方法不一样，Type.Field()返回的是StructFiled对象，有Name,Type等属性，Value.Field()返回的还是一个Value对象。
-````
+```go
 var foo = Foo{"abc", 123}
 
 val := reflect.ValueOf(foo)
@@ -219,8 +219,8 @@ fmt.Println(val.FieldByName("y")) //<int Value>  interface.Value对象
 
 typ := reflect.Typeof(foo)
 fmt.Println(typ.FieldByName("y")) //{  <nil>  0 [] false} 
-````
-````
+```
+```go
 func main() {
   var f = Foo{"abc", 123}
   rv := reflect.ValueOf(f)
@@ -234,12 +234,12 @@ func main() {
 
 //X type is :string ,value is abc
 //Y type is :int ,value is 123
-````
+```
 - 设置Value的值
 
   要设置reflect.Value的值还颇费周折，不能直接对Value进行赋值操作
 
-````
+```go
 var s = "abc"
 fv := reflect.ValueOf(s)
 fmt.Println(fv.CanSet()) //false
@@ -248,9 +248,9 @@ fmt.Println(fv.CanSet()) //false
 fv2 := reflect.ValueOf(&s)
 fmt.Println(fv2.CanSet()) //false
 // fv2.SetString("edf")      //panic
-````
+```
 - relect.Value是字符s的一个反射对象，是不能直接对它进行赋值操作的。 要对s进行赋值，需要先拿到s的指针对应的reflect.Value,然后通过Value.Elem()再对应到s，然后才能赋值操作。 这个地方是相当拗口啊:(
-````
+```go
 func main() {
   var i int = 123
   fv := reflect.ValueOf(i)
@@ -264,11 +264,11 @@ func main() {
   fmt.Println(i) //456
 
 }
-````
+```
 - Method
 
   这个是reflect一个比较经典的使用场景，在知道对象方法名的情况下，调用对象的方法。
-````
+```go
 type Foo struct {
   X string
   Y int
@@ -285,8 +285,7 @@ func main() {
 
 }
 //方法名Do必须是大写的，否则会抛异常
-````
-
+```
 - reflect整体不是很好理解，如果要进一步掌握如何使用，以及在什么场景下用，建议看一些开源库的代码，来理解reflect的使用。下面几个库都大量使用了reflect，供参考：
     - web.go 
     - redigo
