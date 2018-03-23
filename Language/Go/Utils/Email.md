@@ -1,5 +1,5 @@
 # Go语言发送邮件
-````
+```go
 package utils
 
 import (
@@ -21,4 +21,4 @@ func SendMail(to_mail, subject, body string) error {
 	err := smtp.SendMail(send_host, auth, send_mail, send_to, msg)
 	return err
 }
-````
+```
