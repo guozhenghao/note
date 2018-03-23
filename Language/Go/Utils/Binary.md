@@ -2,27 +2,27 @@
 ### 部分使用样例
 ##### biu中方法
 - Bytes to string (binary format)
-````
+```go
 bs := []byte{1, 2, 3}
 s := biu.BytesToBinaryString(bs)
 fmt.Println(s) //[00000001 00000010 00000011]
 fmt.Println(biu.ByteToBinaryString(byte(3))) //00000011
-````
+```
 - Any data type to string (binary format)
-````
+```go
 fmt.Println(biu.ToBinaryString(3)) //[00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000011]
 fmt.Println(biu.ToBinaryString(int8(4))) //00000100
 fmt.Println(biu.ToBinaryString(uint16(2))) //[00000000 00000010]
 fmt.Println(biu.ToBinaryString([]byte{1, 2, 3})) //[00000001 00000010 00000011]
-````
+```
 - String (binary format) to bytes
-````
+```go
 s := "[00000011 10000000]"
 bs := biu.BinaryStringToBytes(s)
 fmt.Printf("%#v\n", bs) //[]byte{0x3, 0x80}
-````
+```
 - String (binary format) to any data type
-````
+```go
 var a uint8
 biu.ReadBinaryString("00000010", &a)
 fmt.Println(a) //2
@@ -30,12 +30,12 @@ fmt.Println(a) //2
 var b int16
 biu.ReadBinaryString("[1 0000 0011]", &b)
 fmt.Println(b) //259
-````
+```
 ##### 还有其他文件中的方法（如number、binary中等）
 
 ## 将下面的文件放进项目
 ### var.go
-````
+```go
 package biu
 
 import "errors"
@@ -69,9 +69,9 @@ func init() {
 	uint8arr[7] = 1
 }
 
-````
+```
 ### number.go
-````
+```go
 package biu
 
 import "encoding/binary"
@@ -96,9 +96,9 @@ func Uint64ToBinaryString(i uint64) string {
 	binary.BigEndian.PutUint64(bs, i)
 	return BytesToBinaryString(bs)
 }
-````
+```
 ### binary.go
-````
+```go
 package biu
 
 import "regexp"
@@ -179,9 +179,9 @@ func appendBinaryString(bs []byte, b byte) []byte {
 	}
 	return bs
 }
-````
+```
 ### biu.go
-````
+```go
 package biu
 
 import "encoding/binary"
@@ -302,6 +302,4 @@ func ToOctalString(v interface{}) (s string) {
 
 	return
 }
-````
-
-
+```
