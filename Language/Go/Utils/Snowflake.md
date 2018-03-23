@@ -1,5 +1,5 @@
 # Go语言snowflake算法（分布式唯一id生成器）
-````
+```go
 package main
 
 import (
@@ -115,4 +115,4 @@ func (id *IdWorker) nextid() (int64, error) {
    id.lastTimestamp = timestamp
    return ((timestamp - id.twepoch) << timestampLeftShift) | (id.districtId << DistrictIdShift) | (id.nodeId << nodeIdShift) | id.sequence, nil
 }
-````
+```
