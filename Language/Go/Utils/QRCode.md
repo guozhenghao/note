@@ -1,7 +1,7 @@
 # Go语言二维码相关操作
 ### 创建二维码
 - 方法1
-````
+```go
 package main
 
 import (
@@ -26,9 +26,9 @@ func main() {
 	// 将二维码写入文件
 	png.Encode(file, qrCode)
 }
-````
+```
 - 方法2
-````
+```go
 package main
 
 import (
@@ -43,10 +43,10 @@ func main() {
     // 创建二维码并将其写入文件
 	qrcode.WriteFile("https://www.baidu.com", qrcode.Medium, 256, "qr.png")
 }
-````
+```
 
 ### 识别二维码
-````
+```go
 package main
 
 import (
@@ -63,4 +63,4 @@ func main() {
 	qrmatrix, _ := qrcode.Decode(fi)
 	fmt.Print(qrmatrix.Content)
 }
-````
+```
