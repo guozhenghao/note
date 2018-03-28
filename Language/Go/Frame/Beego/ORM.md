@@ -5,7 +5,7 @@
 
 ## 连接
 - 读config文件
-````
+```go
 import (
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
@@ -26,20 +26,17 @@ func init() {
 	// 注册model
 	orm.RegisterModel(new(一个model))
 }
-````
+```
 
 - 代码中写死，将上边connectStr改成自己的连接str就行就行
-````
-username:password@tcp(ip:port)/datebase_name?charset=utf8
-````
+
+`username:password@tcp(ip:port)/datebase_name?charset=utf8`
 
 #### 特别注意，如果涉及到数据库的时间，建议直接在这里写上时区，如：
-````
-username:password@tcp(ip:port)/datebase_name?charset=utf8&loc=Asia%2FShanghai
-````
+
+`username:password@tcp(ip:port)/datebase_name?charset=utf8&loc=Asia%2FShanghai`
 
 ## 使用
 - 结构体中的变量名不能瞎起，除首字母外，每遇到一个大写字母会将其变为小写然后前方加入下划线，然后将这个名字与数据库做对应：
-````
-UserName --> user_name
-````
+
+`UserName --> user_name`
