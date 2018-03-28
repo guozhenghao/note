@@ -1,7 +1,7 @@
 # Beego中基础文件
 ## baseController
 baseController是controller中的基础，所有其他的controller结构体在声明时，其中全包含这个base
-````
+```go
 package controllers
 
 import (
@@ -104,11 +104,11 @@ func (this *BaseController) SetData(data interface{}) {
 	this.result.Result = true
 }
 
-````
+```
 
 ## globle
 globle中包含一些常用的配置等
-````
+```go
 package g
 
 import (
@@ -200,4 +200,4 @@ func GetMD5(content string) string {
 	return hex.EncodeToString(hash.Sum(nil))
 }
 
-````
+```
