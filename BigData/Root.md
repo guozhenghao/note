@@ -5,4 +5,4 @@
 ### hbase
 - [安装](/BigData/HBase/Install.sh)
 ### kylin
-- [安装](//BigData/Kylin/Install.sh)
+- [安装](/BigData/Kylin/Install.sh)

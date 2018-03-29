@@ -192,7 +192,9 @@
 - Spark
 - hive
 - hbase
+    - [安装](/BigData/HBase/Install.sh)
 - kylin
+    - [安装](/BigData/Kylin/Install.sh)
 ## 人工智能
 - 未开始
 ## Linux
