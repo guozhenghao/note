@@ -1,11 +1,10 @@
 # Python操作MongoDB
 ### **前期准备**
 - 需要安装pymongo *(没有pip先安装pip)*
-````
-pip install pymongo
-````
+
+    `pip install pymongo`
 ### **使用**
-````
+```python
 # encoding:utf-8
 from pymongo import MongoClient
 import json
@@ -21,4 +20,4 @@ a = coll_haidian_od.find()
 
 # 取出后的数据是游标，通过next可以取出每一项，每项都是一个json类型
 
-````
+```
