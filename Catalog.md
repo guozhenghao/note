@@ -190,11 +190,11 @@
 ## 大数据
 - Hadoop
 - Spark
-- Spark Streaming
-- Storm
+- hive
+- hbase
+- kylin
 ## 人工智能
 - 未开始
-
 ## Linux
 - 基础知识
 - 系统安装
@@ -202,10 +202,6 @@
 - 服务器环境搭建
     - [Java](/Linux/Install/Envirment/Java.md)
     - [CDH](/Linux/Install/Envirment/CDH.md)
-    - [Hadoop](/Linux/Install/Envirment/Hadoop.md)
-    - [Spark](/Linux/Install/Envirment/Spark.md)
-    - [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
-    - [Kafka](/Linux/Install/Envirment/Kafka.md)
 - Docker
     - 基础知识
         - [基础命令](/Docker/Use/Command.md)

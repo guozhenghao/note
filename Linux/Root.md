@@ -6,10 +6,7 @@
 ## 服务器环境搭建
 - [Java](/Linux/Install/Envirment/Java.md)
 - [CDH](/Linux/Install/Envirment/CDH.md)
-- [Hadoop](/Linux/Install/Envirment/Hadoop.md)
-- [Spark](/Linux/Install/Envirment/Spark.md)
-- [Zookeeper](/Linux/Install/Envirment/Zookeeper.md)
-- [Kafka](/Linux/Install/Envirment/Kafka.md)
+
 ## Docker
 - 基础知识
     - [基础命令](/Linux/Docker/Use/Command.md)
