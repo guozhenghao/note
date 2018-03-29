@@ -3,14 +3,14 @@
 #### [拼接demo](/DataBase/MongoDB/Language/JavaDemo.md)
 ### 前期准备
 - 导入包：
-````
+```xml
 < dependency>
      < groupId> org.springframework.boot </groupId >
      < artifactId> spring-boot-starter-data-mongodb </ artifactId>
 </ dependency>
-````
+```
 - application.yml中添加数据库连接信息
-````
+```yaml
 spring:
   data:
     mongodb:
@@ -24,17 +24,17 @@ spring:
       authentication-database: admin
 server:
   port: 8181
-````
+```
 ### 使用
 - 使用时先自动装载MongoTemplate
-````
+```java
 @Autowired
 private MongoTemplate mongoTemplate;
-````
+```
 - find查询 *（创建BasicDBObject对象，然后按照mongodb的语句进行拼接）*
 
 e.g.
-````
+```java
 DBCollection collection = mongoTemplate .getCollection("test" );
 //匹配find信息
 DBObject findInfo = new BasicDBObject("name" ,"张三");
@@ -47,12 +47,12 @@ DBObject dbo = collection.findOne(findInfo);
 while(dbc.hasNext()){
      //...
 }
-````
+```
 
 - aggregate查询 *（方法同上，最后将每个管道加入到一个list中）*
 
 e.g.
-````
+```java
 DBCollection collection = mongoTemplate .getCollection("test" );
 //用于匹配match管道
 DBObject match = new BasicDBObject();
@@ -69,7 +69,7 @@ while (iterator .hasNext()){
       DBObject dbo = iterator.next();
       //...
 }
-````
+```
 ## 普通Java项目
 ### 前期准备
 - 导入包
@@ -82,7 +82,7 @@ while (iterator .hasNext()){
 
 e.g.
 
-````
+```java
 import com.mongodb.BasicDBObject;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
@@ -142,14 +142,14 @@ public enum MongoDBUtil {
            return collection ;
      }
 }
-````
+```
 ### 使用
 - 连接数据库
-````
+```java
 MongoCollection collection = MongoDBUtil.instance .getCollection( "数据库名", "表名" );
-````
+```
 - 普通java项目查询的方法与spring差不多，但是查询的结果都是以迭代器的方式返回
-````
+```java
 //distinct
 DistinctIterable distinctExample = collection.distinct( "name" , String.class );
 //find
@@ -157,4 +157,4 @@ FindIterable findExample= collection.find(new BasicDBObject("name" ,"张三"));
 //对于查询的结果都需要
 Iterator xxIterator = xxExample.iterator();
 然后通过hasNext()、next()方法进行操作
-````
+```
