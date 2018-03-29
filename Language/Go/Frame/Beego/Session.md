@@ -1,7 +1,7 @@
 # Beego 中添加自己的session验证
 
 ### redis连接池
-````
+```go
 package redis
 
 import (
@@ -80,9 +80,9 @@ func GetRedisConnection() (redis.Conn, error) {
 	return redisPool.Get(), nil
 }
 
-````
+```
 ### session类
-````
+```go
 package user
 
 import (
@@ -202,9 +202,9 @@ func GetLiveSessionCount() (int32, error) {
 	return 0, nil
 }
 
-````
+```
 ### 使用
-````
+```
 SetSession(sessionId, userInfo)
 DeleteSession(sessionId)
-````
+```
