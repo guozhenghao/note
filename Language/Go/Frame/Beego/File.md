@@ -1,6 +1,6 @@
 # Beego文件保存或入库
 ### 文件保存
-````
+```go
 fs, header, err := this.GetFile(filekey)
 if err != nil {
     return
@@ -44,10 +44,10 @@ if err != nil {
     return
 }
 
-````
+```
 
 ### 文件入库
-````
+```go
 fs, header, err := this.GetFile(filekey)
 content, err := ioutil.ReadAll(fs)
-````
+```
