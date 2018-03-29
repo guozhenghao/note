@@ -1,7 +1,7 @@
 # Java Spring 拼接Demo
 
 - find
-````
+```java
 DBCollection collection = mongoTemplate.getCollection("表名");
 // 匹配查询
 DBObject matchInfo = new BasicDBObject();
@@ -14,10 +14,10 @@ projectInfo.put("_id", 0 );
 
 // find前面参数用于匹配，第二个参数用于是否显示，可填可不填
 DBCursor dbo = collection.find(matchInfo,projectInfo).sort(new BasicDBObject("time", -1)).limit(10);
-````
+```
 
 - aggregate
-````
+```java
 DBCollection collection = mongoTemplate.getCollection("表名");
 
 // 匹配match
@@ -50,17 +50,17 @@ finalInfo.add(sort);
 
 AggregationOutput result = collection.aggregate(finalInfo);
 Iterator<DBObject> resultIterator = result.results().iterator();
-````
+```
 
 - and
-````
+```java
 List andInfo = new LinkedList<>();
 andInfo.add(new BasicDBObject("date",new BasicDBObject("$gte",strDate)));
 andInfo.add(new BasicDBObject("hour",new BasicDBObject("$gte",strHour)));
-````
+```
 
 - near(find)
-````
+```java
 DBObject geometryInfo = new BasicDBObject();
 geometryInfo.put("type", "Point");
 geometryInfo.put("coordinates",
@@ -72,10 +72,10 @@ nearInfo.put("$maxDistance", 半径);
 DBObject near = new BasicDBObject("$near", nearInfo);
 DBObject finalSearchInfo = new BasicDBObject();
 finalSearchInfo.put("字段名", near);
-````
+```
 
 - polygon(find)
-````
+```java
 List<List<List<Double>>> list1 = new LinkedList<List<List<Double>>>();
 List<List<Double>> list2 = new LinkedList<List<Double>>();
 // 将面的边界点，以list的形式，添加到面的list中
@@ -99,10 +99,10 @@ DBObject geometry = new BasicDBObject("$geometry", geometryInfo);
 DBObject geoWithin = new BasicDBObject("$geoWithin", geometry);
 DBObject finalSearchInfo = new BasicDBObject();
 finalSearchInfo.put("字段名", geoWithin);
-````
+```
 
 - near(aggregate)
-````
+```java
 DBObject geoNear = new BasicDBObject();
 List _list = new LinkedList<>();
 _list.add(中心点lon);
@@ -119,4 +119,4 @@ geoNearInfo.put("minDistance", 0);
 geoNearInfo.put("maxDistance", 半径);
 geoNearInfo.put("spherical", true);
 geoNear.put("$geoNear", geoNearInfo);
-````
+```
