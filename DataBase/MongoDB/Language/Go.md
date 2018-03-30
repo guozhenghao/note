@@ -1,7 +1,7 @@
 # Go语言使用mongodb
 `go get gopkg.in/mgo.v2`
 ### 建立连接Demo
-````
+```go
 package mongo
 
 import (
@@ -68,12 +68,12 @@ func WithMongoCollection(collectionName string, s func(*mgo.Collection) error) e
 	return s(c)
 }
 
-````
+```
 
 ### 使用
 
 - 连接类
-````
+```go
 package mydatabase
 
 import (
@@ -105,10 +105,10 @@ func GetMongoSession(user,password,ip,port,databaseName string) *mgo.Session {
 //使用时建立连接代码demo
 db := mydatabase.GetMongoSession("用户名","密码","ip","port","库名")
 c := db.DB("库名").C("表名")
-````
+```
 #### 所有的操作都可以使用结构体或者bson，后面的有些操作就不分两种情况写了
 - 插入
-````
+```go
 type Person struct {
 	Name	string	`bson:"name"`
 	Age 	int  `bson:"age"`
@@ -119,10 +119,10 @@ err := c.Insert(person1,bson.M{"name":"li","age":2})
 if err != nil{
 	fmt.Println(err.Error())
 }
-````
+```
 
 - 删除
-````
+```go
 person1 := &Person{"zhang",1}
 //结构体
 _, err := c.RemoveAll(person1)
@@ -131,10 +131,10 @@ _, err := c.RemoveAll(bson.M{"name":"li","age":2})
 if err != nil{
 	fmt.Println(err.Error())
 }
-````
+```
 
 - 修改
-````
+```go
 person1 := &Person{"li",2}
 //直接将后面的部分整体替换前面部分
 _,err := c.Update(bson.M{"name":"li"},bson.M{bson.M{"name":"qwer"})
@@ -145,9 +145,9 @@ _,err := c.UpdateAll(bson.M{"name":"li"},bson.M{"$set":bson.M{"name":"qwer"}})
 if err != nil{
 	fmt.Println(err.Error())
 }
-````
+```
 - 查询
-````
+```go
 var person2 Person
 //One方法相当于findOne
 err = c.Find(bson.M{"name": "li"}).One(&person2)
@@ -156,13 +156,13 @@ item := c.Find(bson.M{}).Iter()
 for item.Next(&person2){
 	fmt.Println(person2.Name)
 }
-````
+```
 - Pipe(aggregate)
-````
+```go
 person3 := Person{}
 iter := c.Pipe([]bson.M{bson.M{"$match":bson.M{"name":"qwer"}},bson.M{"$sort":bson.M{"age":1}}}).Iter()
 //数组中的每一项不写bson.M也行: []bson.M{{"$match":bson.M{"name":"qwer"}},{"$sort":bson.M{"age":1}}}
 for iter.Next(&person3){
 	fmt.Println(person3)
 }
-````
+```
