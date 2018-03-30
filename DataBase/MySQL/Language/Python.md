@@ -3,7 +3,7 @@
 `pip install pymysql`
 ### 使用
 - 连接数据库
-````
+```python
 import pymysql  #导入 pymysql  
   
 #打开数据库连接  
@@ -11,9 +11,9 @@ db= pymysql.connect(host="localhost",port=,user="root",password="123456",db="tes
   
 # 使用cursor()方法获取操作游标  
 cur = db.cursor()  
-````
+```
 - 插入
-````
+```python
 sql_insert ="insert into user(id,username,password) values(4,'liu','1234')"  
   
 try:  
@@ -25,9 +25,9 @@ except Exception as e:
     db.rollback()   
 finally:  
     db.close()  
-````
+```
 - 更新或删除
-````
+```python
 sql_update ="update user set username = '%s' where id = %d"  
   
 try:  
@@ -39,9 +39,9 @@ except Exception as e:
     db.rollback()   
 finally:  
     db.close()  
-````
+```
 - 查询
-````
+```python
 sql = "select * from user"  
 try:  
     cur.execute(sql)    #执行sql语句  
@@ -58,4 +58,4 @@ except Exception as e:
     raise e  
 finally:  
     db.close()  #关闭连接  
-````
+```
