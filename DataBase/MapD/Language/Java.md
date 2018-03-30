@@ -8,7 +8,7 @@
 
 e.g.
 
-````
+```java
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -40,9 +40,9 @@ public enum MapdUtil {
 		}
 	}
 }
-````
+```
 ### 使用
-````
+```java
 PreparedStatement ps = null;
 Connection conn = null ;
 
@@ -56,4 +56,4 @@ ResultSet resultSet = ps .executeQuery();
 if (ps != null){ ps.close();}
 if (conn != null){MapdUtil. mapdutil.cloneConn( conn);}
 
-````
+```
