@@ -1,6 +1,6 @@
 # GO语言MySQL
 ### 普通Go项目中使用方法
-````
+```go
 package main
 
 import (
@@ -52,14 +52,14 @@ func main(){
 	fmt.Println(name)
 }
 
-````
+```
 ### Beego中使用方法
 - 使用beego的orm
-````
-go get github.com/astaxie/beego/orm
-````
+
+`go get github.com/astaxie/beego/orm`
+
 - 连接
-````
+```go
 func init() {
 	//从config文件中读取
 	dbhost := beego.AppConfig.String("dbhost")
@@ -73,9 +73,9 @@ func init() {
     //model就是结构体
 	orm.RegisterModel(new(model名1), new(model名2))
 }
-````
+```
 - 配置文件样例
-````
+```yaml
 # MYSQL地址
 dbhost = 
 
@@ -90,9 +90,9 @@ dbpassword =
 
 # MYSQL数据库名称
 dbname = 
-````
+```
 - 使用样例
-````
+```go
 var result []model名
 //如果字符串转数字失败
 if err != nil{
@@ -108,9 +108,9 @@ o := orm.NewOrm()
 sql := fmt.Sprintf("select * from table1")
 //执行赋值
 _, errr := o.Raw(sql).QueryRows(&result)
-````
+```
 - 标准增删改查
-````
+```go
 //das_info是个das信息的结构体
 const (
 	DAS_INFO_TABLE = "das_info"
@@ -149,9 +149,9 @@ func (this *DasInfo) Delete() error {
 	}
 	return nil
 }
-````
+```
 - 事务(未测)
-````
+```go
 dbObj := orm.NewOrm()
 err = dbObj.begin
 sql = fmt.Sprintf("insert into studentinfo(Id, Stuname, Stuidentify, Stubirth, Stuclass, Stumajor)"+" values(3, 'loe','xxx319918xxx','%s','zzzz','TTTT')", "1992-01-01 11:11:11")
@@ -163,4 +163,4 @@ if err != nil {
 	dbObj.Commit()
 	fmt.Println("插入t_studenInfo表成功,事务提交")
 }
-````
+```
