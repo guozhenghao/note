@@ -1,10 +1,10 @@
 # Redis go语言操作
 ### 导入包
-````
-go get github.com/garyburd/redigo/redis
-````
+
+`go get github.com/garyburd/redigo/redis`
+
 ### 连接
-````
+```go
 package main
 
 import (
@@ -20,11 +20,10 @@ func RedisConnect() redis.Conn {
 
    // 没有密码等可以不指定
 }
-
-````
+```
 
 ### 使用
-````
+```go
 conn := models.RedisConnect()
 defer func() {
 	conn.Close()
@@ -32,16 +31,16 @@ defer func() {
 _,err := conn.Do("SET",fmt.Sprintf("%s%d",mailAddr,randomNum),mailAddr,"EX",60 * 5)
 // 若信息为永久储存，则不需要EX和时间（秒）
 test,err := redis.String(conn.Do("GET","123456"))
-````
+```
 
 #### SET、GET 结构体(JSON)
 - SET
-````
+```go
 value, err := json.Marshal(结构体)
 通过SET直接添加即可
-````
+```
 - GET
-````
+```go
 valueBytes, err2 := redis.Bytes(conn.Do("GET", key值))
 json.Unmarshal(valueBytes, 结构体)  
-````
+```
