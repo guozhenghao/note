@@ -3,21 +3,21 @@
 - 导入包：
 
   1.maven项目
-````
+```xml
 <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-all -->
 <dependency>
 	<groupId>org.apache.activemq</groupId>
 	<artifactId>activemq-all</artifactId>
 	<version>5.15.0</version>
 </dependency>
-````
+```
   2.普通Java项目
 
   activemq-all-5.15.0.jar
 
 ## 创建相关类
 - ActiveMqUtil
-````
+```java
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -61,9 +61,9 @@ public enum ActiveMqUtil {
      }
 }
 
-````
+```
 - DataProducer
-````
+```java
 import java.util.Properties;
 import javax.jms.Connection;
 import javax.jms.Destination;
@@ -98,9 +98,9 @@ public class DataProducer {
      }
 }
 
-````
+```
 - FileMethod
-````
+```java
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -115,9 +115,9 @@ public class FileMethod {
      }
 }
 
-````
+```
 - MessageAdapter
-````
+```java
 import java.util.Properties;
 import javax.jms.JMSException;
 
@@ -139,9 +139,9 @@ public abstract class MessageAdapter {
       public abstract void start() throws Exception;
 }
 
-````
+```
 - Message
-````
+```java
 public class Message {
 
       private String key;
@@ -166,9 +166,9 @@ public class Message {
      }
 }
 
-````
+```
 - ResultMap
-````
+```java
 public class ResultMap<T> {
     private T result;
     private String message;
@@ -205,10 +205,10 @@ public class ResultMap<T> {
     }
 }
 
-````
+```
 ## 使用样例
 - 样例
-````
+```java
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -240,11 +240,11 @@ public class TransferMessage extends MessageAdapter {
      }
 }
 
-````
+```
 ## 如果使用文件进行配置则添加代码到start.propertiesz中
 - start.propertiesz
 
-````
+```java
 url: tcp://47.92.6.177:61616
 filename: E:\\test. csv
 topic: topic-test
@@ -254,9 +254,9 @@ v: 100
 v2: 0
 v3: 300
 
-````
+```
 - ActiveMqUtil
-````
+```java
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -308,4 +308,4 @@ public enum ActiveMqUtil {
      }
 }
 
-````
+```
