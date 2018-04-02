@@ -5,7 +5,7 @@
 - 方法1
 
     样例描述：gender为性别字段，1/2分别为男和女，D_DATE为时间字段，现在需要按照每个月为单位进行统计。
-    ````
+    ```sql
     SELECT
         count(IF(GENDER = 1, TRUE, NULL)) AS 男,
         count(IF(GENDER = 2, TRUE, NULL)) AS 女,
@@ -31,9 +31,9 @@
                 `D_DATE`
             )
         )
-    ````
+    ```
     2000-01-01是开始时间，下面的一个例子是按照30分钟进行统计
-    ````
+    ```sql
     SELECT
 	count(IF(GENDER = 1, TRUE, NULL)) AS 男,
 	count(IF(GENDER = 2, TRUE, NULL)) AS 女,
@@ -59,10 +59,10 @@
                 `D_DATE`
             ) / 30
         ) 
-    ````
+    ```
 - 方法2
 
-    ````
+    ```sql
     SELECT
         count(IF(GENDER = 1, TRUE, NULL)) AS 男,
         count(IF(GENDER = 2, TRUE, NULL)) AS 女,
@@ -73,4 +73,4 @@
         MediInternalData
     GROUP BY
         date_format(D_DATE, '%Y-%m');
-    ````
+    ```
