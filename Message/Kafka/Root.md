@@ -6,5 +6,16 @@
 ## 使用
 
 ## 各种语言操作
-- [Java](/Message/Kafka/Language/Java/Java.md)
-- [Python](/Message/Kafka/Language/Python/Python.md)
+- Java
+    - 使用
+        - [生产者和消费者简单样例](/Message/Kafka/Language/Java/ProducerAndConsumerDemo.md)
+        - [kafka_streams](/Message/Kafka/Language/Java/KafkaStreams.md)
+    - 资料
+        - [JavaKafkaAPI](http://kafka.apache.org/10/javadoc/index.html?org/apache/kafka)
+        - [自定义Serializer](http://blog.csdn.net/u012737182/article/details/54135533)
+        - [kafka_streams官方Demo](https://github.com/confluentinc/kafka-streams-examples)
+- Python
+    - 使用
+        - [生产者和消费者简单样例](/Message/Kafka/Language/Python/ProducerAndConsumerDemo.md)
+    - 资料
+        - [kafka-python](https://github.com/dpkp/kafka-python)

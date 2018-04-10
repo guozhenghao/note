@@ -141,8 +141,6 @@
     - 各种语言使用方法
         - [Java](/DataBase/Oracle/Language/Java.md)
 ## 消息中间件
-- ActiveMQ
-    - [Java](/Message/ActiveMQ/Language/Java.md)
 - Kafka
     - 安装
         - [CDH安装](/Message/Kafka/Install/CDH.md)
@@ -163,6 +161,8 @@
                 - [生产者和消费者简单样例](/Message/Kafka/Language/Java/ProducerAndConsumerDemo.md)
             - 资料
                 - [kafka-python](https://github.com/dpkp/kafka-python)
+- ActiveMQ
+    - [Java](/Message/ActiveMQ/Language/Java.md)
 - 资料
     - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
 ## MapBox
