@@ -1,11 +1,11 @@
 # MapBox学习笔记
 ## 基础知识
-- [Mapbox矢量数据生成配图流程](/MapBox/Use/Document.md)
+- [Mapbox矢量数据生成配图流程](/Map/MapBox/Use/Document.md)
 ## 工具及使用
-- [tippecanoe](/MapBox/Utils/Tippecanoe.md)
-- [tileserver-gl-light](/MapBox/Utils/TileserverGlLight.md)
-- [maputnik](/MapBox/Utils/Maputnik.md)
-- [本地化字体制作](/MapBox/Utils/Fontnik.md)
+- [tippecanoe](/Map/MapBox/Utils/Tippecanoe.md)
+- [tileserver-gl-light](/Map/MapBox/Utils/TileserverGlLight.md)
+- [maputnik](/Map/MapBox/Utils/Maputnik.md)
+- [本地化字体制作](/Map/MapBox/Utils/Fontnik.md)
 ## 资料
 - [tippecanoe官方文档](https://github.com/mapbox/tippecanoe)
 - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)

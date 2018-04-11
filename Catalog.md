@@ -166,21 +166,25 @@
     - [Java](/Message/ActiveMQ/Language/Java.md)
 - 资料
     - [各消息中间件对比](https://yq.aliyun.com/articles/216084?spm=5176.100238.spm-cont-list.80.qOAssp)
-## MapBox
-- 基础知识
-    - [Mapbox矢量数据生成配图流程](/MapBox/Use/Document.md)
-- 工具
-    - [tippecanoe](/MapBox/Utils/Tippecanoe.md)
-    - [tileserver-gl-light](/MapBox/Utils/TileserverGlLight.md)
-    - [maputnik](/MapBox/Utils/Maputnik.md)
-    - [本地化字体制作](/MapBox/Utils/Fontnik.md)
-- 资料
-    - [tippecanoe官方文档](https://github.com/mapbox/tippecanoe)
-    - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)
-    - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
-    - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
-    - [基于MapboxGL的样式文件自动生成图例](http://blog.csdn.net/wan_yanyan528/article/details/52538686)
-    - [MapBox不错的操作资料](https://zhuanlan.zhihu.com/c_139752171)
+## 地图相关
+- 相关方法
+    - [GDAL——shp转换geojson](/Map/Use/GDAL.md)
+- 地图
+    - MapBox
+        - 基础知识
+            - [Mapbox矢量数据生成配图流程](/Map/MapBox/Use/Document.md)
+        - 工具及使用
+            - [tippecanoe](/Map/MapBox/Utils/Tippecanoe.md)
+            - [tileserver-gl-light](/Map/MapBox/Utils/TileserverGlLight.md)
+            - [maputnik](/Map/MapBox/Utils/Maputnik.md)
+            - [本地化字体制作](/Map/MapBox/Utils/Fontnik.md)
+        - 资料
+            - [tippecanoe官方文档](https://github.com/mapbox/tippecanoe)
+            - [tippecanoe创建矢量瓦片](http://blog.csdn.net/wan_yanyan528/article/details/70226123)
+            - [风格配置官网](https://www.mapbox.com/mapbox-gl-js/style-spec/)
+            - [风格配置官网(国人翻译版)](https://jingsam.github.io/mapbox-gl-style-spec/)
+            - [基于MapboxGL的样式文件自动生成图例](http://blog.csdn.net/wan_yanyan528/article/details/52538686)
+            - [MapBox不错的操作资料](https://zhuanlan.zhihu.com/c_139752171)
 ## ELK
 - Elasticsearch
     - 基础知识

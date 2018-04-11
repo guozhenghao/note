@@ -10,7 +10,7 @@
 - [编程语言](/Language/Root.md)
 - [数据库](/DataBase/Root.md)
 - [消息中间件](/Message/Root.md)
-- [MapBox](/MapBox/Root.md)
+- [地图](Map/Root.md)
 - [ELK](/ELK/Root.md)
 - [大数据](/BigData/Root.md)
 - [人工智能](/AI/Root.md)
