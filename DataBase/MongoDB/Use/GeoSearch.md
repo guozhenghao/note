@@ -6,7 +6,7 @@ mongo对于空间字段有特殊的结构要求，结构如下:
 {
 	"字段名": {
 		"type": "geo类型",
-		"coordinates": 根据不同类型建立的list
+		"coordinates": "根据不同类型建立的list"
 	}
 }
 ```
@@ -145,13 +145,14 @@ mongo对于空间字段有特殊的结构要求，结构如下:
     {"$geoNear" : 
             {"near" : 
                 { "type" : "Point" , "coordinates" : [ 116.156387329102, 40.1573604627098]} , 
-             "distanceField" : "字段名" , 
-             "query" : { "date" : "20171025","hour":"16"},（相当于match） 
-             "minDistance" : 0, 
-             "maxDistance" : 10,
-             "num" : 2 , 
-             "spherical" : true
+            "distanceField" : "字段名" , 
+            "query" : { "date" : "20171025","hour":"16"}, 
+            "minDistance" : 0, 
+            "maxDistance" : 10,
+            "num" : 2 , 
+            "spherical" : true
            }
         }
     ])
     ```
+    *query相当于match*
