@@ -121,6 +121,7 @@ mongo对于空间字段有特殊的结构要求，结构如下:
         }
     })
     ````
+    可以将near替换为nearSphere。$nearSphere计算的是球面距离，$near计算的是坐标距离。
 
 - 点在面内
 
@@ -139,6 +140,16 @@ mongo对于空间字段有特殊的结构要求，结构如下:
         }
     })
     ````
+    box是一种特殊的情况，为矩形，传入左上和右下两点坐标即可:
+    ````
+    db.getCollection('表名').find({
+        "字段名":
+        {$geoWithin:
+            { $box:  [ [ 0, 0 ], [ 100, 100 ] ] }
+        }
+    })
+    ````
+    box还可以替换为center和centerSphere，这两者的区别前者计算球面距离，后者为坐标距离。但是这两者只能作用于2d的传统索引。格式为[ [ lon, lat ], radius ]。
 - 周边查询(聚合函数)
     ````
     db.getCollection('表名').aggregate([
