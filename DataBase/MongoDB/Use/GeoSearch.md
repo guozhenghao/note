@@ -156,3 +156,16 @@ mongo对于空间字段有特殊的结构要求，结构如下:
     ])
     ````
     *query相当于match*
+- 各种空间结构做相交操作
+    ````
+    db.getCollection('表名').find({
+        "字段名":
+        {$geoIntersects:
+            {$geometry:
+                {type:"xxxxxx",
+                 coordinates:[xxxxxxxxxxx]
+                }
+            }
+        }
+    })
+    ````
