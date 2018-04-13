@@ -109,7 +109,7 @@ mongo对于空间字段有特殊的结构要求，结构如下:
 ## 使用
 **所有find中的操作，也可以放到聚合函数中做match**
 - 附近(圆)
-    ```json
+    ````
     db.getCollection('表明').find({
         "字段名":
         {$near:
@@ -120,12 +120,12 @@ mongo对于空间字段有特殊的结构要求，结构如下:
             }
         }
     })
-    ```
+    ````
 
 - 点在面内
 
     **注意查询语句中设定的面也要首尾相连**
-    ```json
+    ````
     db.getCollection('表名').find({
         "字段名":
         {$geoWithin:
@@ -140,13 +140,13 @@ mongo对于空间字段有特殊的结构要求，结构如下:
     })
     ````
 - 周边查询(聚合函数)
-    ```json
+    ````
     db.getCollection('表名').aggregate([
     {"$geoNear" : 
             {"near" : 
                 { "type" : "Point" , "coordinates" : [ 116.156387329102, 40.1573604627098]} , 
-            "distanceField" : "字段名" , 
-            "query" : { "date" : "20171025","hour":"16"}, 
+            "distanceField" : "字段名" ,
+            "query" : { "date" : "20171025","hour":"16"},
             "minDistance" : 0, 
             "maxDistance" : 10,
             "num" : 2 , 
@@ -154,5 +154,5 @@ mongo对于空间字段有特殊的结构要求，结构如下:
            }
         }
     ])
-    ```
+    ````
     *query相当于match*
