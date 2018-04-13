@@ -5,8 +5,8 @@ mongo对于空间字段有特殊的结构要求，结构如下:
 ```json
 {
     "字段名": {
-	    "type": "geo类型",
-	    "coordinates": "根据不同类型建立的list"
+        "type": "geo类型",
+        "coordinates": "根据不同类型建立的list"
     }
 }
 ```
