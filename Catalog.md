@@ -10,6 +10,8 @@
             - [读取yaml配置文件](/Language/Java/Use/LoadYaml.md)
             - [Json](/Language/Java/Use/Json.md)
             - [OPTIONS请求](/Language/Java/Use/OPTIONS.md)
+            - [下载文件](/Language/Java/Use/Download.md) 
+            - [操作Excel](/Language/Java/Use/Excel.md)           
         - 工具类
             - [UTC时间相互转换](/Language/Java/Utils/UTCTransform.md)
             - [判断点在面内](/Language/Java/Utils/GeometyMethod.md)
@@ -19,7 +21,6 @@
             - [GeoHash](/Language/Java/Utils/GeoHash.md)
             - [绘制抛物线](/Language/Java/Utils/Parabola.md)
             - [SnowFlake](/Language/Java/Utils/SnowFlake.md)
-            - [下载文件](/Language/Java/Utils/Download.md)
         - 框架
             - Spring Boot
                 - 基础知识
