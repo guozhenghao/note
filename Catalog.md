@@ -19,6 +19,7 @@
             - [GeoHash](/Language/Java/Utils/GeoHash.md)
             - [绘制抛物线](/Language/Java/Utils/Parabola.md)
             - [SnowFlake](/Language/Java/Utils/SnowFlake.md)
+            - [下载文件](/Language/Java/Utils/Download.md)
         - 框架
             - Spring Boot
                 - 基础知识
