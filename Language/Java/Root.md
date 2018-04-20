@@ -1,6 +1,6 @@
 # Java学习笔记
 ## 基础知识
-- [读写文件](/Language/Java/Use/ReadFile.md)
+- [获取列表&读写文件](/Language/Java/Use/ReadFile.md)
 - [跨域问题](/Language/Java/Use/CrossOrigin.md)
 - [时间相关](/Language/Java/Use/Time.md)
 - [读取yaml配置文件](/Language/Java/Use/LoadYaml.md)
