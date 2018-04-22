@@ -27,13 +27,12 @@
     - 样例: `MULTIPOLYGON(((1 1,1 2,2 2,2 1,1 1)),((2 2,2 3,3 2,2 2)))`
         - 里面是多个polygon
 
-
 ### 数据插入
 ```sql
 INSERT into 表明(字段名) VALUES(ST_GeomFromText('上方列举的数据格式'))
 ```
 以插入一个point为例:
-```
+```sql
 INSERT into test(point) VALUES(ST_GeomFromText('Point(5 5)'))
 ```
 
