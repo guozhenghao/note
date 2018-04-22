@@ -105,23 +105,26 @@ INSERT into test(point) VALUES(ST_GeomFromText('Point(5 5)'))
             - ST_Distance_Sphere(A,B) --> A和B的球面距离
         - 不同
             - ST_Difference(A,B) --> 返回A中有B中没有的
-        - 简化
+        - 抽稀
             - ST_Simplify(A,mix_distance) --> 将A抽稀，简化A中两点距离小于max的值(用起来有点迷。。待研究)   
         - 缓冲区
             - ST_Buffer(A,length) --> 通过A几何体，生成他周边范围为length距离的面
-                - 5.7.7后可以添加策略影响缓冲区的计算
+                - 5.7.7后可以添加策略影响缓冲区的计算,设置的语句是ST_Buffer_Strategy()
                     - point策略
-                        - point_circle
-                        - point_square
+                        - point_circle --> 点的缓冲区是一个圆(默认)
+                        - point_square --> 点的缓冲区是一个正方形，length是点到其中一边的距离
                     - join策略
-                        - join_round
-                        - join_miter
+                        - join_round --> 连接处缓冲区边界为圆弧(默认)
+                        - join_miter --> 连接处缓冲区边界为尖角
                     - end策略
-                        - end_round
-                        - end_flat
-                - ***这块贼尼玛玄学，等我再思考一波***
-                    - http://www.fooplot.com/
-                    - https://dev.mysql.com/doc/refman/5.7/en/spatial-operator-functions.html#function_st-buffer-strategy
+                        - end_round --> 在结束处缓冲区为圆弧(默认)
+                        - end_flat --> 在结束处缓冲区为平坦的直线
+                    - 举例生成缓冲区
+                        ```sql
+                        ST_Buffer(point, 5, ST_Buffer_Strategy('point_square'))
+
+                        ST_Buffer(line, 5, ST_Buffer_Strategy('join_miter', 10), ST_Buffer_Strategy('end_flat'))
+                        ```
     - 上部分中的空间查询相关方法的判断方法，返回值是是否
         - 相交
             - ST_Intersects(A,B) --> A和B是否相交
