@@ -113,11 +113,11 @@ INSERT into test(point) VALUES(ST_GeomFromText('Point(5 5)'))
                         - point_circle --> 点的缓冲区是一个圆(默认)
                         - point_square --> 点的缓冲区是一个正方形，length是点到其中一边的距离
                     - join策略
-                        - join_round --> 连接处缓冲区边界为圆弧(默认)
+                        - join_round --> 连接处(比如线段的拐点位置)缓冲区边界为圆弧(默认)
                         - join_miter --> 连接处缓冲区边界为尖角
                     - end策略
-                        - end_round --> 在结束处缓冲区为圆弧(默认)
-                        - end_flat --> 在结束处缓冲区为平坦的直线
+                        - end_round --> 在结束处缓冲区为圆弧(默认)  该方法相当于在线端点位置，以端点为圆心，形成一个缓冲区，然后与原缓冲区相加。
+                        - end_flat --> 在结束处缓冲区为平坦的直线  该方法在线端点位置做一条垂直于线方向的垂线，垂线的线另一侧没有缓冲区，相当于将直线沿其垂线方向左右平移形成缓冲区。
                     - 举例生成缓冲区
                         ```sql
                         ST_Buffer(point, 5, ST_Buffer_Strategy('point_square'))
