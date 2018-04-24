@@ -7,3 +7,5 @@
 ## windows
 - [InfluxDBStudio](/Utils/InfluxDBStudio.md)
 - [NavicatPremium12注册](/Utils/NavicatPremium.md)
+## ETC
+- [API](/Utils/API.md)
