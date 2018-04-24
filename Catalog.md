@@ -224,6 +224,7 @@
     - [CDH](/Linux/Install/Envirment/CDH.md)
 - Docker
     - 基础知识
+        - [安装](/Linux/Docker/Use/Install.md)
         - [基础命令](/Docker/Use/Command.md)
         - [镜像加速](/Docker/Use/DownloadSource.md)
         - [更改时区](/Docker/Use/Time.md)
