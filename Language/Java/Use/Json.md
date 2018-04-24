@@ -22,3 +22,8 @@ String json = gson.toJson(创建好的对象);
 Gson gson = new Gson();
 对象 test = gson.fromJson(json字符串, 对象.class);
 ```
+
+- String转json
+```java
+JsonObject test = new JsonParser().parse(str).getAsJsonObject();
+```
