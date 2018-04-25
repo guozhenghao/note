@@ -24,6 +24,8 @@
     - 方法二：
 
         将\release-1900-x64-dev\release-1800-x64\bin\gdal\java和\release-1900-x64-dev\release-1800-x64\bin中的dll文件全部拷贝到项目的根路径下。
+
+    **如果是linux运行，需要安装linux版本的gdal，然后将linux的os文件按照上述方法进行拷贝**
 ## 使用
 ```java
 import org.gdal.*;
