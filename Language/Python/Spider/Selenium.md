@@ -1,9 +1,16 @@
 # Selenium自动化测试框架
-
+-->[自己的demo](https://github.com/GuoZhenghao/scrapy-spider)<--
 ## python版本
 ### 前期准备
 - 安装selenium
+    - `pip install selenium`
 - 下载chrome drive
+    - 根据自己浏览器版本下载-->[下载地址](http://chromedriver.storage.googleapis.com/index.html)<--
+    - 将chromedrive.exe移动到chrome安装目录(C:\Program Files (x86)\Google\Chrome\Application)
+    - 将上一步路径添加到系统环境变量的path中
+- 安装phantomjs
+    - -->[下载地址](http://phantomjs.org/download.html)<--
+    - 解压后将该bin目录添加到系统环境变量的path中
 ### 页面爬取
 ```python
 browser = webdriver.Chrome()
@@ -39,4 +46,4 @@ browser.get('http://xxxxxx')
 首先检查是否自动添加了某个标签的闭合标签，或者是多添加了一层标签。如果不是上述情况则是兼容性问题。这是可以采取将动态解析好的网页用lxml解析。
 ```python
 tree=etree.HTML(browser.page_source.encode('utf-8'))
- ```
+```
