@@ -1,6 +1,6 @@
 # Spring Boot
 ## 基础知识
-
+- [自己的demo](https://github.com/GuoZhenghao/spring-boot-demo)
 ## 小操作
 - [预加载](/Language/Java/Frame/SpringBoot/Preloading.md)
 - [跨域问题](/Language/Java/Frame/SpringBoot/CrossOrigin.md)
