@@ -1,6 +1,11 @@
 # Scrapy爬虫框架
-- 自己github有框架，不记录了
+-->[自己的demo](https://github.com/GuoZhenghao/scrapy-spider)<--
 
+## 环境安装
+- 安装win32
+    - -->[下载地址](https://sourceforge.net/projects/pywin32/files/pywin32/)<--
+- 安装scrapy
+    - `pip install scrapy`
 ## 调试shell
 ```python
 from scrapy.shell import inspect_response
