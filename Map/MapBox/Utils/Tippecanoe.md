@@ -1,5 +1,12 @@
 # tippecanoe
-
+## 安装
+```shell
+git clone git@github.com:mapbox/tippecanoe.git
+cd tippecanoe
+make -j
+make install
+```
+## 使用
 负责将geojson数据转换成mbtiles文件
 
 - 使用命令：
