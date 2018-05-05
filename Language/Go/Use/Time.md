@@ -1,5 +1,4 @@
 # Go时间操作
-- 先上个例子
 ```go
 package main
 
@@ -21,6 +20,10 @@ func main() {
 	//从字符串转为时间戳，第一个参数是格式，第二个是要转换的时间字符串
 	tm2, _ := time.Parse("01/02/2006", "02/08/2015")
 	fmt.Println(tm2.Unix())
+
+	//时间加减
+	timeDay, _ := time.ParseDuration("-24h")
+	timeNow := time.Unix(time.Now().Add(timeDay).Unix(), 0).Format("2006-01-02 15:04:05")
 }
 ```
 - 在Go语言里，fomrat中的这些数字都是有特殊函义的，不是随便指定的数字，见下面列表：
@@ -34,4 +37,3 @@ func main() {
     - 时区时差表示 -07,-0700,Z0700,Z07:00,-07:00,MST
     - 时区字母缩写 MST
 
-- 使用时为了方便，可以直接：`tm := time.Now().Format("")`
