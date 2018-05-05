@@ -1,4 +1,7 @@
 # Python学习笔记
+从指定源安装库
+
+pip install xxxxxx -i https://pypi.douban.com/simple
 ## 基础知识
 - [网络请求](/Language/Python/Use/Net.md)
 - [使用linux命令](/Language/Python/Use/Linux.md)
