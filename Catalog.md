@@ -107,6 +107,8 @@
         - [官方文档](https://docs.mongodb.com/manual/)
         - [gopkg.in/mgo.v2 API](https://godoc.org/gopkg.in/mgo.v2)
 - MapD
+    - 安装
+        - [MapD安装](/DataBase/MapD/Install/Install.md)
     - 各种语言使用方法
         - [Java使用](/DataBase/MapD/Language/Java.md)
 - MySQL
