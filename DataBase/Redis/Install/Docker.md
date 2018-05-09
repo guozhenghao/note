@@ -8,3 +8,6 @@ docker run -p 6380:6379 --name 容器名 -v /user/redis.config:/etc/redis/redis.
 或者在redis里面创建密码，可以在笔记[数据库redis模块](/DataBase/Redis/Root.md)中查看
 
 appendonly yes是持久化设置
+
+- 添加一个配置文件样例
+-->[配置文件](/DataBase/Redis/Install/redis.conf)<--
