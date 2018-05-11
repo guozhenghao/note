@@ -16,3 +16,21 @@
 - [人工智能](/AI/Root.md)
 - [Linux](/Linux/Root.md)
 - [工具](/Utils/Root.md)
+### TODO
+- 毕设
+    - 前端
+        - bts
+        - environment
+        - traffic
+        - bike
+        - medicals
+        - population
+    - 爬虫
+        - 稳定性验证
+    - 服务
+        - 等待前端验证
+- 笔记
+    - shape转geojson两种方法
+- 看书
+    - 设计模式
+    - 深度学习
