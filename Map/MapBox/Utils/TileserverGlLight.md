@@ -3,6 +3,7 @@
 负责mbtiles数据发布。tileserver-gl依赖较多的本地库文件，不容易编译安装，tileserver-gl-light是tileserver-gl的缩减版，去除了本地库依赖，可以通过npm直接安装。
 ## 安装
 安装命令: `npm install -g tileserver-gl-light`
+Docker安装: `docker run --rm -it -v $(pwd):/data -p 8080:80 klokantech/tileserver-gl`
 ## 使用
 - 使用命令：
 
