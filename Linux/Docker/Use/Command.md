@@ -23,3 +23,11 @@ docker start/stop/rm 实例id
 ````
 sudo systemctl restart docker
 ````
+- 查看容器挂载信息
+````
+docker inspect 容器名 | grep Mounts -A 20
+````
+- 查看docker指定容器日志
+````
+docker logs -f -t --since="2017-05-31" --tail=10 容器名
+````
