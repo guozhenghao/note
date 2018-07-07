@@ -5,3 +5,4 @@
 - [Redis](/DataBase/Redis/Root.md)
 - [InfluxDB](/DataBase/InfluxDB/Root.md)
 - [Oracle](/DataBase/Oracle/Root.md)
+- [OTS-table_store](/DateBase/OTS/Root.md)
