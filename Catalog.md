@@ -57,13 +57,14 @@
             - [随机数](/Language/Go/Use/Rand.md)
             - [Json](/Language/Go/Use/Json.md)
             - [格式化fmt](/Language/Go/Use/Fmt.md)
-        - 工具类
+        - 工具类或其他技术
             - [进制转换](/Language/Go/Utils/Binary.md)
             - [发送邮件](/Language/Go/Utils/Email.md)
             - [snowflake](/Language/Go/Utils/Snowflake.md)
             - [定时cron](/Language/Go/Utils/Cron.md)
             - [二维码相关](/Language/Go/Utils/QRCode.md)
             - [protobuf](/Language/Go/Utils/Protobuf.md)
+            - [gRPC](/Language/Go/Utils/GRPC.md)
         - 框架
             - Beego
                 - 基础知识

@@ -10,7 +10,7 @@
 - [随机数](/Language/Go/Use/Rand.md)
 - [Json](/Language/Go/Use/Json.md)
 - [格式化fmt](/Language/Go/Use/Fmt.md)
-## 工具类
+## 工具类或其他技术
 - [进制转换](/Language/Go/Utils/Binary.md)
 - [发送邮件](/Language/Go/Utils/Email.md)
 - [snowflake](/Language/Go/Utils/Snowflake.md)
