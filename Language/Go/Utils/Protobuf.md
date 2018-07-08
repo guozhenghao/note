@@ -57,4 +57,6 @@ func main(){
 ## 备注
 在使用上方protoc时候，service中的rpc方法等，没有regist方法。
 
-使用下方命令`protoc -I test/ test/test.proto --go_out=plugins=grpc:test`就可以，有时间研究。
+使用`protoc --go_out=plugins=grpc:. *.proto`才会产生
+
+[点击进入goproto的github地址](https://github.com/golang/protobuf)
