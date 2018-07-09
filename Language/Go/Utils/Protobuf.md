@@ -59,4 +59,8 @@ func main(){
 
 使用`protoc --go_out=plugins=grpc:. *.proto`才会产生
 
+如果proto中有import，在编译时package的import使用`-I`参数指定目录
+
+rest等方法去grpc中查看
+
 [点击进入goproto的github地址](https://github.com/golang/protobuf)
