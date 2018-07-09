@@ -113,3 +113,4 @@ func main() {
 - [gRPC-go官方文档](http://doc.oschina.net/grpc?t=60133#client)
 - [gRPC内容介绍](https://blog.csdn.net/phantom_111/article/details/74356739)
 - [golang版本grpc服务端浅析](https://guidao.github.io/grpc_server.html)
+- [http协议转换](https://segmentfault.com/a/1190000008106582)
