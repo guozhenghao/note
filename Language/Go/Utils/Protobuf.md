@@ -61,6 +61,39 @@ func main(){
 
 如果proto中有import，在编译时package的import使用`-I`参数指定目录
 
-rest等方法去grpc中查看
+常规grpc编译：
+```shell
+protoc -I/usr/local/include -I. \
+  -I$GOPATH/src \
+  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+  --go_out=plugins=grpc:. \
+  path/to/your_service.proto
+  # 或者按照上方中写的带grpc的简单方法
+```
+
+设置rest的grpc编译：
+
+`go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway`
+```shell
+protoc -I/usr/local/include -I. \
+  -I$GOPATH/src \
+  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+  --plugin=protoc-gen-grpc=grpc_ruby_plugin \
+  --grpc-ruby_out=. \
+  path/to/your/service.proto
+  # 生成.pb.gw.go文件
+```
+
+生成swagger：
+
+`go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger`
+```shell
+protoc -I/usr/local/include -I. \
+  -I$GOPATH/src \
+  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
+  --swagger_out=logtostderr=true:. \
+  path/to/your_service.proto
+  # 生成.swagger.json文件
+```
 
 [点击进入goproto的github地址](https://github.com/golang/protobuf)
