@@ -108,33 +108,6 @@ func main() {
 
 `go run client.go`
 
-## 备注
-如果使用的proto文件中，使用了rest相关设置，需要使用如下方法进行编译。
-
-常规grpc编译：
-```shell
-protoc -I/usr/local/include -I. \
-  -I$GOPATH/src \
-  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
-  --go_out=plugins=grpc:. \
-  path/to/your_service.proto
-  # 或者按照protobuf中写的带grpc的简单方法
-```
-
-设置rest的grpc编译：
-
-`go get -u github.com/grpc-ecosystem/grpc-gateway/protoc-gen-grpc-gateway`
-```shell
-protoc -I/usr/local/include -I. \
-  -I$GOPATH/src \
-  -I$GOPATH/src/github.com/grpc-ecosystem/grpc-gateway/third_party/googleapis \
-  --plugin=protoc-gen-grpc=grpc_ruby_plugin \
-  --grpc-ruby_out=. \
-  path/to/your/service.proto
-```
-
-
-
 ## 资料
 看到几个写的比较详细的介绍
 - [gRPC-go官方文档](http://doc.oschina.net/grpc?t=60133#client)
